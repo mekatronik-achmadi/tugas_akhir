@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage{showframe}
+\usepackage{graphicx}
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=40mm,
+ right=30mm,
+ top=30mm,
+ bottom=30mm,
+ }
+
+
+\title{}
+\author{}
+\date{}
+
+\pdfinfo{%
+  /Title    (Proposal Tugas Akhir)
+  /Author   (Achmadi)
+  /Creator  (Achmadi)
+  /Producer (Achmadi)
+  /Subject  (Buat TA)
+  /Keywords (TA dan TA)
+}
+
+\begin{document}
+
+\centering{ \textbf{ \Large{PROPOSAL TUGAS AKHIR } } }\\[5pt]
+\centering{ \textbf{ \large{Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} Menggunakan OpenCV pada perangkat RaspberryPi } } }
+\\[50pt]
+\centering{ \includegraphics[width=200pt]{ITS} }
+\\[50pt]
+\centering{ \textbf{ \large{Disusun Oleh:} } } \\[1pt]
+\centering{ \underline{\textbf{ \large{Achmadi} } }} \\[1pt]
+
+
+\end{document}
