@@ -30,13 +30,37 @@
 
 \begin{document}
 
-\centering{ \textbf{ \Large{PROPOSAL TUGAS AKHIR } } }\\[5pt]
-\centering{ \textbf{ \large{Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} Menggunakan OpenCV pada perangkat RaspberryPi } } }
-\\[50pt]
-\centering{ \includegraphics[width=200pt]{ITS} }
-\\[50pt]
-\centering{ \textbf{ \large{Disusun Oleh:} } } \\[1pt]
-\centering{ \underline{\textbf{ \large{Achmadi} } }} \\[1pt]
+\pagenumbering{gobble}
 
+\begin{center}
+  \textbf{ \Large{PROPOSAL TUGAS AKHIR } }\\[5pt]
+  \textbf{ \large{Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} Menggunakan OpenCV pada perangkat RaspberryPi } }
+  \\[50pt]
+  \includegraphics[width=200pt]{ITS}
+  \\[50pt]
+  \textbf{ \large{Disusun Oleh:} }\\[1pt]
+  \underline{\textbf{ \large{Achmadi} } }\\[1pt]
+  \textbf{ \large{NRP: 2410100085 } }\\[40pt]
+  \textbf{ \large{Pembimbing: } }\\[1pt]
+  \textbf{ \large{Bu Apri \hspace{50pt} NIP: } }\\[60pt]
+  \textbf{ \large{PROGRAM STUDI S-1 TEKNIK FISIKA } }\\[1pt]
+  \textbf{ \large{JURUSAN TEKNIK FISIKA } }\\[1pt]
+  \textbf{ \large{FAKULTAS TEKNOLOGI INDUSTRI } }\\[1pt]
+  \textbf{ \large{INSTITUT TEKNOLOGI SEPULUH NOPEMBER } }\\[1pt]
+  \textbf{ \large{SURABAYA } }\\[1pt]
+  \textbf{ \large{2014 } }\\[1pt]
+\end{center}
+\newpage
+
+\begin{center}
+  \textbf{ LEMBAR PENGESAHAN  }\\[5pt]
+  \textbf{ PROPOSAL TUGAS AKHIR  } \\[5pt]
+  \textbf{ JURUSAN TEKNIK FISIKA FTI-ITS  } \\[5pt]
+\end{center}
+
+\noindent \rule{385pt}{5pt} \\[5pt]
+
+\noindent Judul \hspace{49pt} : Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} Menggunakan OpenCV pada perangkat RaspberryPi \\[1pt]
+\noindent Bidang Studi \hspace{16pt} : Rekayasa Fotonika\\[1pt]
 
 \end{document}
