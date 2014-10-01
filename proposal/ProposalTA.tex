@@ -37,7 +37,7 @@
 % Cover
 \begin{center}
   \textbf{ \Large{PROPOSAL TUGAS AKHIR } }\\[5pt]
-  \textbf{ \large{Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} Menggunakan OpenCV pada perangkat RaspberryPi } }
+  \textbf{ \large{Rancang Bangun \textit{Robot Vision} Menggunakan \textit{Color Tracking} pada perangkat RaspberryPi } }
   \\[50pt]
   \includegraphics[width=200pt]{ITS}
   \\[50pt]
@@ -62,8 +62,7 @@
   \textbf{ JURUSAN TEKNIK FISIKA FTI-ITS  }\\[5pt]
 \end{center}
 \rule{385pt}{5pt}\\
-\noindent Judul \hspace{80pt} : Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color} \\[5pt]
-\textit{Tracking} Menggunakan OpenCV pada perangkat RaspberryPi \\[5pt]
+\noindent Judul \hspace{80pt} : Rancang Bangun \textit{Robot Vision} Menggunakan \textit{Color Tracking} pada perangkat RaspberryPi\\[5pt]
 \noindent Bidang Studi \hspace{42pt} : Rekayasa Fotonika\\[5pt]
 \noindent 1. Nama Mahasiswa \hspace{5pt} : Achmadi\\[5pt]
 \noindent 2. NRP  \hspace{70pt} : 2410100085\\[5pt]
@@ -75,11 +74,13 @@
 \begin{flushright}
   Surabaya, 15 September 2014
 \end{flushright}
- Pembimbing, \hspace{235pt} Pengusul,
- \\[40pt]
- \underline{Ir. Apriani K. MSc} \hspace{200pt} \underline{Achmadi}\\
- NIP: 195304041979012001 \hspace{150pt} NRP: 2410100085
- \\[40pt]
+\begin{flushleft}
+Pembimbing, \hspace{230pt} Pengusul, 
+\\[40pt]
+\underline{Ir. Apriani K. MSc} \hspace{200pt} \underline{Achmadi}\\
+NIP: 195304041979012001 \hspace{150pt} NRP: 2410100085
+\\[40pt]
+\end{flushleft}
 \begin{center}
   Mengetahui,\\
   Kepala Laboratorium Rekayasa Fotonika
@@ -91,18 +92,21 @@
 \begin{center}
  \textbf{PROPOSAL TUGAS AKHIR}
 \end{center}
-\noindent \textbf{I. \hspace{10pt} Judul}
 %==================================================== 
 % Pendahuluan
-Rancang Bangun \textit{Robot Vision} Berbasis \textit{Color Tracking} \ Menggunakan OpenCV pada perangkat RaspberryPi
+\noindent \textbf{I. \hspace{10pt} Judul}
+
+Rancang Bangun \textit{Robot Vision} Menggunakan \textit{Color Tracking} pada perang-\ kat RaspberryPi
 \\[10pt]
-\noindent \textbf{II. \hspace{9pt} Mata Kuliah Pilihan Bidang Minat Yang Diambil}\\
-1. Pengolahan Citra\\
+\noindent \textbf{II. \hspace{9pt} Mata Kuliah Pilihan Bidang Minat Yang Diambil}
+
+1. Pengolahan Citra
+
 2. Metrologi Optik
 \\[10pt]
 \noindent \textbf{III. \hspace{8pt} Pembimbing}
 
-1. Bu Apri
+1. Ir. Apriani K. MSc
 \\[10pt]
 \noindent \textbf{IV. \hspace{9pt} Latar Belakang} 
 
@@ -220,43 +224,53 @@ Proses segmentasi merupakan proses yang penting dalam pengolahan citra.
 Segmentasi digunakan untuk memfilter objek yang tidak dibutuhkan.
 Filter dapat berupa persamaan matematis,logic maupun maupun matrix kernel \cite{improc1} .
 \\[10pt]
-\noindent \textbf{IX. \hspace{9pt} Metodologi Penelitian} 
+\noindent \textbf{IX. \hspace{9pt} Metodologi Penelitian}
 
-% Pada penelitian tugas akhir ini langkah awal yang dilakukan adalah studi literatur.
-% Studi literatur ini digunakan untuk mendapatkan referensi mengenai skema peralatan dan perancangan eksperimen yang sesuai.
-% Langkah kedua adalah pembuatan robot berdasarkan literatur atau design yang telah ada.
-% Langkah ketiga adalah menguji robot untuk mendapatkan data performa robot tersebut pada variasi tingkat pencahayaan.
-% Langkah keempat adalah membuat analisis mengenai hasil yang diperoleh dari eksperimen. 
-% Selanjutnya langkah terakhir adalah penulisan laporan.
-% 
-% \begin{center}
-%  \includegraphics[height=400pt]{flow}
-% \end{center}
+Pada penelitian tugas akhir ini langkah awal yang dilakukan adalah studi literatur.
+Studi literatur ini digunakan untuk mendapatkan referensi mengenai skema peralatan dan perancangan eksperimen yang sesuai.
+Langkah kedua adalah pembuatan robot berdasarkan literatur atau design yang telah ada.
+Langkah ketiga adalah menguji robot untuk mendapatkan data performa robot tersebut pada variasi tingkat pencahayaan.
+Langkah keempat adalah membuat analisis mengenai hasil yang diperoleh dari eksperimen. 
+Selanjutnya langkah terakhir adalah penulisan laporan.
+
+Berikut flowchart dari penelitian yang akan dilakukan:
+
+\begin{center}
+ \includegraphics[height=450pt]{flow}
+\end{center}
+
+\vspace{40pt}
+
+Berikut skema awal dari robot vision yang akan dibuat:
+
+\begin{center}
+ \includegraphics[width=350pt]{desain_awal}
+\end{center}
 
 \vspace{10pt}
-\noindent \textbf{IX. \hspace{9pt} Jadwal Kerja} 
+\noindent \textbf{IX. \hspace{9pt} Jadwal Kerja}
 
 Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
 
-% \begin{center}
-%  \begin{tabular}{ |l|l|l|l|l|l| }
-%    \hline
-%    No & Kegiatan & \multicolumn{4}{|c|}{Bulan} \\
-%    \hline
-%      &  & 1 & 2 & 3 & 4 \\
-%    \hline
-%    1 & Studi literatur & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \\
-%    \hline
-%    2 & Perancangan dan Pembuatan & & \cellcolor{blue} & \cellcolor{blue} & \\
-%    \hline
-%    3 & Pengambilan Data & & & \cellcolor{blue} & \cellcolor{blue} \\
-%    \hline
-%    4 & Analisa Data & & & & \cellcolor{blue} \\
-%    \hline
-%    5 & Penulisan Laporan & & & \cellcolor{blue} & \cellcolor{blue} \\
-%   \hline
-% \end{tabular}
-% \end{center}
+\begin{center}
+ \begin{tabular}{ |l|l|l|l|l|l| }
+   \hline
+   No & Kegiatan & \multicolumn{3}{|c|}{Bulan} \\
+   \hline
+     &  & 1 & 2 & 3 \\
+   \hline
+   1 & Studi literatur & \cellcolor{blue} & & \\
+   \hline
+   2 & Perancangan dan Pembuatan & \cellcolor{blue} & & \\
+   \hline
+   3 & Pengambilan Data & & \cellcolor{blue} & \\
+   \hline
+   4 & Analisa Data & & & \cellcolor{blue} \\
+   \hline
+   5 & Penulisan Laporan & & \cellcolor{blue} & \cellcolor{blue} \\
+  \hline
+\end{tabular}
+\end{center}
 
 \vspace{10pt}
 \noindent \textbf{X. \hspace{9pt} Daftar Pustaka} 

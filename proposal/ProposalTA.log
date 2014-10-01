@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.19)  25 SEP 2014 10:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.28)  1 OCT 2014 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,40 +507,47 @@ Package pdftex.def Info: ITS.png used on input line 42.
 (pdftex.def)             Requested size: 200.0pt x 199.50034pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ITS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
-
- []
-
-[2] [3] <HSV.png, id=19, 256.96pt x 256.157pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ITS.png>] [2] [3]
+<HSV.png, id=19, 256.96pt x 256.157pt>
 File: HSV.png Graphic file (type png)
  <use HSV.png>
-Package pdftex.def Info: HSV.png used on input line 159.
+Package pdftex.def Info: HSV.png used on input line 163.
 (pdftex.def)             Requested size: 200.0pt x 199.3795pt.
- [4 <./HSV.png>]
-[5] [6] (./ProposalTA.aux) ) 
+ [4 <./HSV.png>] [5]
+<flow.png, id=33, 79.497pt x 409.53pt>
+File: flow.png Graphic file (type png)
+ <use flow.png>
+Package pdftex.def Info: flow.png used on input line 239.
+(pdftex.def)             Requested size: 87.3584pt x 450.0pt.
+ [6 <./flow.png>]
+<desain_awal.png, id=38, 1127.412pt x 778.107pt>
+File: desain_awal.png Graphic file (type png)
+ <use desain_awal.png>
+Package pdftex.def Info: desain_awal.png used on input line 247.
+(pdftex.def)             Requested size: 350.0pt x 241.555pt.
+ [7 <./desain_awal.png>] (./ProposalTA.aux) ) 
 Here is how much of TeX's memory you used:
- 3359 strings out of 495028
- 43688 string characters out of 6181497
+ 3369 strings out of 495028
+ 43841 string characters out of 6181497
  117414 words of memory out of 5000000
- 6517 multiletter control sequences out of 15000+600000
+ 6525 multiletter control sequences out of 15000+600000
  8677 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,10n,35p,294b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ProposalTA.pdf (6 pages, 434870 bytes).
+</usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on ProposalTA.pdf (7 pages, 859191 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
