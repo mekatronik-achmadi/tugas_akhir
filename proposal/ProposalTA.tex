@@ -149,7 +149,32 @@ Penelitian tugas akhir ini dibatasi pada kajian rancang bangun robot yang menggu
 \\[10pt]
 \noindent \textbf{VIII. \hspace{7pt} Teori Penunjang}
 
-\indent \textbf{8.1. \hspace{8pt} Mode Warna HSV}
+\indent \textbf{8.1. \hspace{8pt} Kamera Digital}
+
+Kamera digital adalah instrumen perekam gambar (optis) secara elektronik.
+Beberapa jenis kamera digital yang saat ini banyak digunakan adalah jenis CCD, EMCCD, CMOS, dan ICCD.
+Dalam penelitian ini digunakan kamera berjenis CCD karena harga yang terjangkau dan populer.
+
+Kamera CCD (Charge-Coupled Device) adalah jenis kamera dengan sensor dalam ukuran pixel berupa phototransistor yang terhubung penguat.
+Ketika paket cahaya atau foton membentur phototransistor tersebut, akan timbul muatan yang kemudian dikuatkan.
+Secara skematik setiap pixelnya memiliki skema seperti berikut:
+\begin{center}
+ \includegraphics[width=200pt]{ccd1}
+\end{center}
+
+Ketika foton membentur sensor, setiap pixelnya menghasil elektron yang dibaca oleh \textit{Readout Register}.
+Karena disusun dalam matrix maka dilakukan \textit{scanning} dalam proses perekamannya.
+\begin{center}
+ \includegraphics[width=200pt]{ccd2}
+\end{center}
+Setiap pixelnya, terdiri dari lapisan semikonduktor (silikon).
+Disetiap lapisan membaca R, G, dan B secara terpisah.
+Berikut skemanya:\cite{ccd}
+\begin{center}
+ \includegraphics[width=150pt]{ccd3}
+\end{center}
+
+\indent \textbf{8.2. \hspace{8pt} Mode Warna HSV}
 
 Dalam pengolahan citra, dikenal mode warna sebagai representasi cara manusia melihat \cite{robot} . 
 Mode warna yang banyak digunakan adalah RGB, CMYK, HSL, dan HSV \cite{improc1}. 
@@ -214,7 +239,7 @@ Sedangkan untuk nilai Hue, maka konversi nilai RGB ke Hue dalam nilai bentuk sud
 Konversi di atas menggunakan 360 derajat.
 Dalam pemrograman bilangan 8 bit hanya maximal 255 maka nilai 360 dibagi 2 sehingga kisaran nilai menjadi 0-179.
 \\[10pt]
-\indent \textbf{8.2. \hspace{8pt} Segmentasi Citra}
+\indent \textbf{8.3. \hspace{8pt} Segmentasi Citra}
 
 Segmentasi citra adalah proses mengumpulkan pixel-pixel karena kesamaan properti.
 Kesamaan properti dapat berupa nilai intensitas, bentuk tekstur, garis tepi, dll.
@@ -223,7 +248,18 @@ Ada banyak teknik untuk segmentasi citra dengan masing-masing memiliki kompleksi
 Proses segmentasi merupakan proses yang penting dalam pengolahan citra.
 Segmentasi digunakan untuk memfilter objek yang tidak dibutuhkan.
 Filter dapat berupa persamaan matematis,logic maupun maupun matrix kernel \cite{improc1} .
-\\[10pt]
+
+Proses segmentasi yang digunakan disini menggunakan Tresholding dimana setiap nilai pixel dibandingkan dengan nilai ambang.
+Jika masuk diantara ambang atas dan bawah, maka di ambil nilai putih (skala abu-abu), sedangkan jika tidak diambil nilai hitam (skala abu-abu).
+Secara matematis dinyatakan:
+\begin{equation}
+  P(i,j) =  
+  \begin{cases}
+      255,& H_{min} \leq H\leq H_{max} \land S_{min} \leq S\leq S_{max} \land V_{min} \leq V\leq V_{max}\\
+      0,              & \text{ selainnya } \\
+  \end{cases}
+\end{equation}
+\newpage
 \noindent \textbf{IX. \hspace{9pt} Metodologi Penelitian}
 
 Pada penelitian tugas akhir ini langkah awal yang dilakukan adalah studi literatur.
@@ -239,7 +275,7 @@ Berikut flowchart dari penelitian yang akan dilakukan:
  \includegraphics[height=450pt]{flow}
 \end{center}
 
-\vspace{40pt}
+\newpage
 
 Berikut skema awal dari robot vision yang akan dibuat:
 
@@ -253,7 +289,7 @@ Berikut skema awal dari algoritma color tracking yang akan dibuat:
  \includegraphics[width=130pt]{ct}
 \end{center}
 
-\vspace{10pt}
+\newpage
 \noindent \textbf{IX. \hspace{9pt} Jadwal Kerja}
 
 Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
@@ -263,13 +299,13 @@ Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
    \hline
    No & Kegiatan & \multicolumn{3}{|c|}{Bulan} \\
    \hline
-     &  & 1 & 2 & 3 \\
+     &  & Oktober & November & Desember \\
    \hline
-   1 & Studi literatur & \cellcolor{blue} & & \\
+   1 & Studi literatur & \cellcolor{blue} & \cellcolor{blue} & \\
    \hline
-   2 & Perancangan dan Pembuatan & \cellcolor{blue} & & \\
+   2 & Perancangan dan Pembuatan & \cellcolor{blue} & \cellcolor{blue} & \\
    \hline
-   3 & Pengambilan Data & & \cellcolor{blue} & \\
+   3 & Pengambilan Data & & \cellcolor{blue} & \cellcolor{blue} \\
    \hline
    4 & Analisa Data & & & \cellcolor{blue} \\
    \hline
@@ -284,6 +320,7 @@ Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
 \begingroup
   \renewcommand{\section}[2]{}%
     \begin{thebibliography}{}
+	\bibitem{ccd} Andor Team \textit{Digital Camera Fundamentals} 2012
 	\bibitem{robot} Browning, Brett \textit{Real-Time, Adaptive Color-based Robot Vision} 2013
 	\bibitem{robot_function} Chao, Fei \textit{A developmental approach to robotic pointing via human–robot interaction} 2014
 	\bibitem{asimo} Honda Team \textit{Asimo Technical Information} 2007
