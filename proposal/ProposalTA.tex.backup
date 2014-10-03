@@ -149,7 +149,12 @@ Penelitian tugas akhir ini dibatasi pada kajian rancang bangun robot yang menggu
 \\[10pt]
 \noindent \textbf{VIII. \hspace{7pt} Teori Penunjang}
 
-\indent \textbf{8.1. \hspace{8pt} Kamera Digital}
+\indent \textbf{8.1. \hspace{8pt} Robot Vision}
+Robot vision adalah robot yang menggunakan input visual berupa kamera.
+Input visual tersebut digunakan untuk pengenalan objek, navigasi, dsb.
+
+
+\indent \textbf{8.2. \hspace{8pt} Kamera Digital}
 
 Kamera digital adalah instrumen perekam gambar (optis) secara elektronik.
 Beberapa jenis kamera digital yang saat ini banyak digunakan adalah jenis CCD, EMCCD, CMOS, dan ICCD.
@@ -167,8 +172,14 @@ Karena disusun dalam matrix maka dilakukan \textit{scanning} dalam proses pereka
 \begin{center}
  \includegraphics[width=200pt]{ccd2}
 \end{center}
+Setiap pixelnya, terdiri dari lapisan semikonduktor (silikon).
+Disetiap lapisan membaca R, G, dan B secara terpisah.
+Berikut skemanya:\cite{ccd}
+\begin{center}
+ \includegraphics[width=150pt]{ccd3}
+\end{center}
 
-\indent \textbf{8.2. \hspace{8pt} Mode Warna HSV}
+\indent \textbf{8.3. \hspace{8pt} Mode Warna HSV}
 
 Dalam pengolahan citra, dikenal mode warna sebagai representasi cara manusia melihat \cite{robot} . 
 Mode warna yang banyak digunakan adalah RGB, CMYK, HSL, dan HSV \cite{improc1}. 
@@ -233,7 +244,7 @@ Sedangkan untuk nilai Hue, maka konversi nilai RGB ke Hue dalam nilai bentuk sud
 Konversi di atas menggunakan 360 derajat.
 Dalam pemrograman bilangan 8 bit hanya maximal 255 maka nilai 360 dibagi 2 sehingga kisaran nilai menjadi 0-179.
 \\[10pt]
-\indent \textbf{8.3. \hspace{8pt} Segmentasi Citra}
+\indent \textbf{8.4. \hspace{8pt} Segmentasi Citra}
 
 Segmentasi citra adalah proses mengumpulkan pixel-pixel karena kesamaan properti.
 Kesamaan properti dapat berupa nilai intensitas, bentuk tekstur, garis tepi, dll.
@@ -253,7 +264,19 @@ Secara matematis dinyatakan:
       0,              & \text{ selainnya } \\
   \end{cases}
 \end{equation}
-\\[10pt]
+Berikut adalah gambar asli yang diambil oleh kamera:
+\begin{center}
+ \includegraphics[width=200pt]{imgori}
+\end{center}
+Sedangkan berikut adalah gambar hasil Tresholding dengan rentang H,S,V masing-masing 170-179 (merah), 171-255, 120-255:
+\begin{center}
+ \includegraphics[width=200pt]{imgthresh}
+\end{center}
+Gambar hasil Tresholding tersebut selanjutnya akan direduksi noise menggunakan metode erusi dan dilasi.
+Kemudian akan ditentukan posisi titik pusatnya dengan metode momen.
+Dengan ditentukannya posisi titik pusat, maka perpindahan objek tersebut dapat diikuti.
+
+\newpage
 \noindent \textbf{IX. \hspace{9pt} Metodologi Penelitian}
 
 Pada penelitian tugas akhir ini langkah awal yang dilakukan adalah studi literatur.
@@ -269,7 +292,7 @@ Berikut flowchart dari penelitian yang akan dilakukan:
  \includegraphics[height=450pt]{flow}
 \end{center}
 
-\vspace{40pt}
+\newpage
 
 Berikut skema awal dari robot vision yang akan dibuat:
 
@@ -283,7 +306,7 @@ Berikut skema awal dari algoritma color tracking yang akan dibuat:
  \includegraphics[width=130pt]{ct}
 \end{center}
 
-\vspace{10pt}
+\newpage
 \noindent \textbf{IX. \hspace{9pt} Jadwal Kerja}
 
 Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
@@ -293,13 +316,13 @@ Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
    \hline
    No & Kegiatan & \multicolumn{3}{|c|}{Bulan} \\
    \hline
-     &  & 1 & 2 & 3 \\
+     &  & Oktober & November & Desember \\
    \hline
-   1 & Studi literatur & \cellcolor{blue} & & \\
+   1 & Studi literatur & \cellcolor{blue} & \cellcolor{blue} & \\
    \hline
-   2 & Perancangan dan Pembuatan & \cellcolor{blue} & & \\
+   2 & Perancangan dan Pembuatan & \cellcolor{blue} & \cellcolor{blue} & \\
    \hline
-   3 & Pengambilan Data & & \cellcolor{blue} & \\
+   3 & Pengambilan Data & & \cellcolor{blue} & \cellcolor{blue} \\
    \hline
    4 & Analisa Data & & & \cellcolor{blue} \\
    \hline

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.28)  3 OCT 2014 01:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.28)  3 OCT 2014 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,71 +508,89 @@ Package pdftex.def Info: ITS.png used on input line 42.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ITS.png>] [2] [3]
-<ccd1.png, id=19, 291.33844pt x 248.42813pt>
+<konsep.png, id=19, 1132.23pt x 712.261pt>
+File: konsep.png Graphic file (type png)
+ <use konsep.png>
+Package pdftex.def Info: konsep.png used on input line 158.
+(pdftex.def)             Requested size: 200.0pt x 125.81044pt.
+
+<ccd1.png, id=20, 291.33844pt x 248.42813pt>
 File: ccd1.png Graphic file (type png)
  <use ccd1.png>
-Package pdftex.def Info: ccd1.png used on input line 162.
+Package pdftex.def Info: ccd1.png used on input line 171.
 (pdftex.def)             Requested size: 200.0pt x 170.54752pt.
-
-<ccd2.png, id=20, 214.55156pt x 130.98938pt>
+ [4 <./konsep.png>]
+<ccd2.png, id=25, 214.55156pt x 130.98938pt>
 File: ccd2.png Graphic file (type png)
  <use ccd2.png>
-Package pdftex.def Info: ccd2.png used on input line 168.
+Package pdftex.def Info: ccd2.png used on input line 177.
 (pdftex.def)             Requested size: 200.0pt x 122.10666pt.
- [4 <./ccd1.png>]
-<ccd3.png, id=24, 221.32687pt x 156.585pt>
+
+<ccd3.png, id=26, 221.32687pt x 156.585pt>
 File: ccd3.png Graphic file (type png)
  <use ccd3.png>
-Package pdftex.def Info: ccd3.png used on input line 174.
+Package pdftex.def Info: ccd3.png used on input line 183.
 (pdftex.def)             Requested size: 150.0pt x 106.12755pt.
 
-<HSV.png, id=25, 256.96pt x 256.157pt>
+<HSV.png, id=27, 256.96pt x 256.157pt>
 File: HSV.png Graphic file (type png)
  <use HSV.png>
-Package pdftex.def Info: HSV.png used on input line 188.
+Package pdftex.def Info: HSV.png used on input line 197.
 (pdftex.def)             Requested size: 200.0pt x 199.3795pt.
- [5 <./ccd2.png> <./ccd3.png> <./HSV.png>] [6] [7] <flow.png, id=43, 79.497pt x
- 409.53pt>
+ [5 <./ccd1.png> <./ccd2.png> <./ccd3.png>] [6 <./HSV.png>]
+<imgori.png, id=36, 236.38312pt x 179.16937pt>
+File: imgori.png Graphic file (type png)
+ <use imgori.png>
+Package pdftex.def Info: imgori.png used on input line 273.
+(pdftex.def)             Requested size: 200.0pt x 151.5948pt.
+
+<imgthresh.png, id=37, 238.64156pt x 170.88844pt>
+File: imgthresh.png Graphic file (type png)
+ <use imgthresh.png>
+Package pdftex.def Info: imgthresh.png used on input line 277.
+(pdftex.def)             Requested size: 200.0pt x 143.21675pt.
+ [7 <./imgori.png>] [8 <./imgthresh.png>] <flow.png, id=50, 79.497pt x 409.53pt
+>
 File: flow.png Graphic file (type png)
- <use flow.png>
-Package pdftex.def Info: flow.png used on input line 275.
+
+<use flow.png>
+Package pdftex.def Info: flow.png used on input line 296.
 (pdftex.def)             Requested size: 87.3584pt x 450.0pt.
-
-[8 <./flow.png>] <desain_awal.png, id=48, 1127.412pt x 778.107pt>
+ [9 <./flow.png>]
+<desain_awal.png, id=55, 1127.412pt x 778.107pt>
 File: desain_awal.png Graphic file (type png)
-
-<use desain_awal.png>
-Package pdftex.def Info: desain_awal.png used on input line 283.
+ <use desain_awal.png>
+Package pdftex.def Info: desain_awal.png used on input line 304.
 (pdftex.def)             Requested size: 350.0pt x 241.555pt.
- <ct.png, id=49, 380.622pt x 1012.583pt>
+
+<ct.png, id=56, 380.622pt x 1012.583pt>
 File: ct.png Graphic file (type png)
  <use ct.png>
-Package pdftex.def Info: ct.png used on input line 289.
+Package pdftex.def Info: ct.png used on input line 310.
 (pdftex.def)             Requested size: 130.0pt x 345.84964pt.
-
-[9 <./desain_awal.png> <./ct.png>] [10] (./ProposalTA.aux) ) 
+ [10 <./desain_awal.png> <./ct.png>] [11] (./ProposalTA.aux) ) 
 Here is how much of TeX's memory you used:
- 3390 strings out of 495028
- 44072 string characters out of 6181497
- 117418 words of memory out of 5000000
- 6542 multiletter control sequences out of 15000+600000
+ 3406 strings out of 495028
+ 44308 string characters out of 6181497
+ 117422 words of memory out of 5000000
+ 6555 multiletter control sequences out of 15000+600000
  8677 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,10n,35p,294b,184s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on ProposalTA.pdf (10 pages, 932830 bytes).
+</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on ProposalTA.pdf (11 pages, 1603110 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

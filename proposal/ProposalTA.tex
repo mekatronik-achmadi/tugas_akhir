@@ -149,7 +149,16 @@ Penelitian tugas akhir ini dibatasi pada kajian rancang bangun robot yang menggu
 \\[10pt]
 \noindent \textbf{VIII. \hspace{7pt} Teori Penunjang}
 
-\indent \textbf{8.1. \hspace{8pt} Kamera Digital}
+\indent \textbf{8.1. \hspace{8pt} Robot Vision}
+Robot vision adalah robot yang menggunakan input visual berupa kamera.
+Input visual tersebut digunakan untuk pengenalan objek, navigasi, hingga pengambilan keputusan \cite{robot_vision}.
+Skema dasar dari setiap robot vision adalah input (kamera), perangkat pemroses, algoritma pemroses, dan aktuator.
+Berikut adalah gambar salah satu desain dasar robot vision:
+\begin{center}
+ \includegraphics[width=200pt]{konsep}
+\end{center}
+
+\indent \textbf{8.2. \hspace{8pt} Kamera Digital}
 
 Kamera digital adalah instrumen perekam gambar (optis) secara elektronik.
 Beberapa jenis kamera digital yang saat ini banyak digunakan adalah jenis CCD, EMCCD, CMOS, dan ICCD.
@@ -174,7 +183,7 @@ Berikut skemanya:\cite{ccd}
  \includegraphics[width=150pt]{ccd3}
 \end{center}
 
-\indent \textbf{8.2. \hspace{8pt} Mode Warna HSV}
+\indent \textbf{8.3. \hspace{8pt} Mode Warna HSV}
 
 Dalam pengolahan citra, dikenal mode warna sebagai representasi cara manusia melihat \cite{robot} . 
 Mode warna yang banyak digunakan adalah RGB, CMYK, HSL, dan HSV \cite{improc1}. 
@@ -239,7 +248,7 @@ Sedangkan untuk nilai Hue, maka konversi nilai RGB ke Hue dalam nilai bentuk sud
 Konversi di atas menggunakan 360 derajat.
 Dalam pemrograman bilangan 8 bit hanya maximal 255 maka nilai 360 dibagi 2 sehingga kisaran nilai menjadi 0-179.
 \\[10pt]
-\indent \textbf{8.3. \hspace{8pt} Segmentasi Citra}
+\indent \textbf{8.4. \hspace{8pt} Segmentasi Citra}
 
 Segmentasi citra adalah proses mengumpulkan pixel-pixel karena kesamaan properti.
 Kesamaan properti dapat berupa nilai intensitas, bentuk tekstur, garis tepi, dll.
@@ -259,6 +268,18 @@ Secara matematis dinyatakan:
       0,              & \text{ selainnya } \\
   \end{cases}
 \end{equation}
+Berikut adalah gambar asli yang diambil oleh kamera:
+\begin{center}
+ \includegraphics[width=200pt]{imgori}
+\end{center}
+Sedangkan berikut adalah gambar hasil Tresholding dengan rentang H,S,V masing-masing 170-179 (merah), 171-255, 120-255:
+\begin{center}
+ \includegraphics[width=200pt]{imgthresh}
+\end{center}
+Gambar hasil Tresholding tersebut selanjutnya akan direduksi noise menggunakan metode erusi dan dilasi.
+Kemudian akan ditentukan posisi titik pusatnya dengan metode momen.
+Dengan ditentukannya posisi titik pusat, maka perpindahan objek tersebut dapat diikuti.
+
 \newpage
 \noindent \textbf{IX. \hspace{9pt} Metodologi Penelitian}
 
@@ -320,6 +341,7 @@ Jadwal penelitian yang akan dilakukan tertera pada tabel di bawah ini.
 \begingroup
   \renewcommand{\section}[2]{}%
     \begin{thebibliography}{}
+	\bibitem{robot_vision} Aleš Ude \textit{Robot Vision} 2010
 	\bibitem{ccd} Andor Team \textit{Digital Camera Fundamentals} 2012
 	\bibitem{robot} Browning, Brett \textit{Real-Time, Adaptive Color-based Robot Vision} 2013
 	\bibitem{robot_function} Chao, Fei \textit{A developmental approach to robotic pointing via human–robot interaction} 2014
