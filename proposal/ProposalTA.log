@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.28)  6 OCT 2014 07:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.28)  6 OCT 2014 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,62 +511,62 @@ Package pdftex.def Info: ITS.png used on input line 42.
 <konsep.png, id=19, 1132.23pt x 712.261pt>
 File: konsep.png Graphic file (type png)
  <use konsep.png>
-Package pdftex.def Info: konsep.png used on input line 158.
+Package pdftex.def Info: konsep.png used on input line 160.
 (pdftex.def)             Requested size: 200.0pt x 125.81044pt.
 
 <ccd1.png, id=20, 291.33844pt x 248.42813pt>
 File: ccd1.png Graphic file (type png)
  <use ccd1.png>
-Package pdftex.def Info: ccd1.png used on input line 171.
+Package pdftex.def Info: ccd1.png used on input line 173.
 (pdftex.def)             Requested size: 200.0pt x 170.54752pt.
  [4 <./konsep.png>]
 <ccd2.png, id=25, 214.55156pt x 130.98938pt>
 File: ccd2.png Graphic file (type png)
  <use ccd2.png>
-Package pdftex.def Info: ccd2.png used on input line 177.
+Package pdftex.def Info: ccd2.png used on input line 179.
 (pdftex.def)             Requested size: 200.0pt x 122.10666pt.
 
 <ccd3.png, id=26, 221.32687pt x 156.585pt>
 File: ccd3.png Graphic file (type png)
  <use ccd3.png>
-Package pdftex.def Info: ccd3.png used on input line 183.
+Package pdftex.def Info: ccd3.png used on input line 185.
 (pdftex.def)             Requested size: 150.0pt x 106.12755pt.
 
 <HSV.png, id=27, 256.96pt x 256.157pt>
 File: HSV.png Graphic file (type png)
  <use HSV.png>
-Package pdftex.def Info: HSV.png used on input line 197.
+Package pdftex.def Info: HSV.png used on input line 199.
 (pdftex.def)             Requested size: 200.0pt x 199.3795pt.
  [5 <./ccd1.png> <./ccd2.png> <./ccd3.png>] [6 <./HSV.png>]
 <imgori.png, id=36, 236.38312pt x 179.16937pt>
 File: imgori.png Graphic file (type png)
  <use imgori.png>
-Package pdftex.def Info: imgori.png used on input line 273.
+Package pdftex.def Info: imgori.png used on input line 275.
 (pdftex.def)             Requested size: 200.0pt x 151.5948pt.
 
 <imgthresh.png, id=37, 238.64156pt x 170.88844pt>
 File: imgthresh.png Graphic file (type png)
  <use imgthresh.png>
-Package pdftex.def Info: imgthresh.png used on input line 277.
+Package pdftex.def Info: imgthresh.png used on input line 279.
 (pdftex.def)             Requested size: 200.0pt x 143.21675pt.
  [7 <./imgori.png>] [8 <./imgthresh.png>] <flow.png, id=50, 125.46875pt x 569.1
 2625pt>
 File: flow.png Graphic file (type png)
 
 <use flow.png>
-Package pdftex.def Info: flow.png used on input line 297.
+Package pdftex.def Info: flow.png used on input line 299.
 (pdftex.def)             Requested size: 99.2111pt x 450.0pt.
  [9 <./flow.png>]
 <desain_awal.png, id=54, 1127.412pt x 778.107pt>
 File: desain_awal.png Graphic file (type png)
  <use desain_awal.png>
-Package pdftex.def Info: desain_awal.png used on input line 305.
+Package pdftex.def Info: desain_awal.png used on input line 307.
 (pdftex.def)             Requested size: 350.0pt x 241.555pt.
 
 <flow2.png, id=55, 295.1025pt x 617.30624pt>
 File: flow2.png Graphic file (type png)
  <use flow2.png>
-Package pdftex.def Info: flow2.png used on input line 311.
+Package pdftex.def Info: flow2.png used on input line 313.
 (pdftex.def)             Requested size: 150.0pt x 313.77647pt.
  [10 <./desain_awal.png> <./flow2.png>] [11] (./ProposalTA.aux) ) 
 Here is how much of TeX's memory you used:
@@ -588,7 +588,7 @@ amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b>
-Output written on ProposalTA.pdf (11 pages, 1561825 bytes).
+Output written on ProposalTA.pdf (11 pages, 1562141 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream

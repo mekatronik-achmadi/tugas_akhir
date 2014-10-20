@@ -1,0 +1,8 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";
+"2";"";"PINHD-1X2";"1X02";"MO1, MO2";"PIN HEADER";"";"";"";"";
+"1";"";"PINHD-1X7";"1X07";"JP1";"PIN HEADER";"";"";"";"";
+"4";"330";"R-EU_R1206";"R1206";"RA1, RA2, RD1, RD2";"RESISTOR, European symbol";"";"";"";"";
+"4";"4k7";"R-EU_R1206";"R1206";"RB1, RB2, RC1, RC2";"RESISTOR, European symbol";"";"";"";"";
+"4";"IRF530";"IRF530";"TO220BV";"QC1, QC2, QD1, QD2";"HEXFET Power MOSFET";"";"";"";"";
+"4";"IRF9530";"IRF9530";"TO220BV";"QA1, QA2, QB1, QB2";"P-CHANNEL HEXFET POWER-MOS-FET";"";"";"";"";
+"4";"PC817";"PC817";"DIL04";"OKA1, OKA2, OKB1, OKB2";"SHARP OPTO COUPLER";"";"PC817X4J000F";"9707727";"97K7059";

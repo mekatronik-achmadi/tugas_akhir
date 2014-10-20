@@ -1,0 +1,12 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";
+"1";"";"AK300/3";"AK300/3";"PWR";"CONNECTOR";"";"";"unknown";"unknown";
+"12";"";"LEDSML1206";"SML1206";"L-PWR, L-RUN, L-RX, L-TX, LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8";"LED";"";"";"";"";
+"1";"";"PINHD-1X3";"1X03";"PROG";"PIN HEADER";"";"";"";"";
+"1";"";"PINHD-1X8";"1X08";"OUTPUT";"PIN HEADER";"";"";"";"";
+"4";"22p";"C-EUC1206";"C1206";"C-XA-1, C-XA-2, C-XB-1, C-XB-2";"CAPACITOR, European symbol";"";"";"";"";
+"1";"32khz";"CRYSTALTC26V";"TC26V";"X-B";"CRYSTAL";"";"";"unknown";"unknown";
+"12";"330";"R-EU_R1206";"R1206";"RL-PWR, RL-RUN, RL-RX, RL-TX, RL1, RL2, RL3, RL4, RL5, RL6, RL7, RL8";"RESISTOR, European symbol";"";"";"";"";
+"1";"8mhz";"CRYSTALHC49S";"HC49/S";"XA";"CRYSTAL";"";"";"1667008";"unknown";
+"1";"FT232RL";"FT232RL";"SSOP28";"IC1";"Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf";"";"FT232RL";"1146032";"91K9918";
+"1";"MINI-USB-32005-201";"MINI-USB-32005-201";"32005-201";"USB";"MINI USB-B Conector";"";"";"unknown";"unknown";
+"1";"STM32F10XRXT6";"STM32F10XRXT6";"TQFP64";"U1";"STM32F101/103 64pin LQFP";"";"";"";"";
