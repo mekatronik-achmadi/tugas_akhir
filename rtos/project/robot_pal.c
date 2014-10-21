@@ -4,28 +4,28 @@ void Right_fow(void){
 	palSetPad(PORT_PAL,RIGHT_B);
 	palClearPad(PORT_PAL,RIGHT_A);
 	
-	palSetPad(PORT_LED,RIGHT_I);
+	palClearPad(PORT_LED,RIGHT_I);
 }
 
 void Right_back(void){
 	palSetPad(PORT_PAL,RIGHT_A);
 	palClearPad(PORT_PAL,RIGHT_B);
 	
-	palClearPad(PORT_LED,RIGHT_I);
+	palSetPad(PORT_LED,RIGHT_I);
 }
 
 void Left_fow(void){
 	palSetPad(PORT_PAL,LEFT_B);
 	palClearPad(PORT_PAL,LEFT_A);
 	
-	palSetPad(PORT_LED,LEFT_I);
+	palClearPad(PORT_LED,LEFT_I);
 }
 
 void Left_back(void){
 	palSetPad(PORT_PAL,LEFT_A);
 	palClearPad(PORT_PAL,LEFT_B);
 	
-	palClearPad(PORT_LED,LEFT_I);
+	palSetPad(PORT_LED,LEFT_I);
 }
 
 void Pal_clear(void){

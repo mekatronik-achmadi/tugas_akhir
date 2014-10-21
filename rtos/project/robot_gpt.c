@@ -1,7 +1,8 @@
 #include "srcconf.h"
 
 uint16_t loop;
-uint16_t value=75;
+uint16_t value=50;
+extern uint16_t dir;
 
 static void gpt3cb(GPTDriver *gptp) {
   (void)gptp;
@@ -9,13 +10,43 @@ static void gpt3cb(GPTDriver *gptp) {
   loop++;
   
   if(loop==value){
-	Right_fow();
-	Left_fow();  
+    Pal_clear(); 
   }
   
   if(loop==100){
-	loop=0;
-	Pal_clear();  
+    
+    loop=0;
+    
+    if(dir==FOWARD){
+      Right_fow();
+      Left_fow();
+      palClearPad(PORT_LED,RIGHT_I);
+      palClearPad(PORT_LED,LEFT_I);
+    }
+    else if(dir==BACKWARD){
+      Right_back();
+      Left_back();
+      palClearPad(PORT_LED,RIGHT_I);
+      palClearPad(PORT_LED,LEFT_I);
+    }  
+    else if(dir==RIGHT){
+      Right_back();
+      Left_fow();
+      palClearPad(PORT_LED,RIGHT_I);
+      palSetPad(PORT_LED,LEFT_I);
+    }  
+    else if(dir==LEFT){
+      Right_fow();
+      Left_back();
+      palSetPad(PORT_LED,RIGHT_I);
+      palClearPad(PORT_LED,LEFT_I);
+    }
+    else if(dir==STOP){
+      Pal_clear();
+      palSetPad(PORT_LED,RIGHT_I);
+      palSetPad(PORT_LED,LEFT_I);
+    }
+    
   }
   
   chSysLockFromIsr();
