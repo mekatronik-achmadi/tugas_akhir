@@ -15,6 +15,14 @@ qrobot::qrobot(QWidget *parent) :
     ui->actionBackward->setEnabled(false);
     ui->actionRight->setEnabled(false);
     ui->actionLeft->setEnabled(false);
+
+    qrobot::on_actionOpen_triggered();
+
+    my_timer = new QTimer(this);
+
+    QObject::connect(my_timer,SIGNAL(timeout()),this,SLOT(booted()));
+    my_timer->start(500);
+
 }
 
 qrobot::~qrobot()
@@ -98,30 +106,48 @@ void qrobot::on_actionClose_triggered()
 
 void qrobot::on_actionFoward_triggered()
 {
+    my_timer->stop();
     QByteArray comdata="foward\n";
     my_port->write(comdata);
+    my_timer->start(500);
 }
 
 void qrobot::on_actionBackward_triggered()
 {
+    my_timer->stop();
     QByteArray comdata="backward\n";
     my_port->write(comdata);
+    my_timer->start(500);
 }
 
 void qrobot::on_actionRight_triggered()
 {
+    my_timer->stop();
     QByteArray comdata="right\n";
     my_port->write(comdata);
+    my_timer->start(500);
 }
 
 void qrobot::on_actionLeft_triggered()
 {
+    my_timer->stop();
     QByteArray comdata="left\n";
     my_port->write(comdata);
+    my_timer->start(500);
 }
 
 void qrobot::on_actionStop_triggered()
 {
+    my_timer->stop();
     QByteArray comdata="stop\n";
     my_port->write(comdata);
+    my_timer->start(500);
+}
+
+void qrobot::booted()
+{
+    my_timer->stop();
+    QByteArray comdata="booted\n";
+    my_port->write(comdata);
+    my_timer->start(500);
 }

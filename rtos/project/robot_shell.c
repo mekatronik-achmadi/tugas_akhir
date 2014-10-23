@@ -72,6 +72,17 @@ static void cmd_stop(BaseSequentialStream *chp, int argc, char *argv[]) {
   return;
 }
 
+static void cmd_booted(BaseSequentialStream *chp, int argc, char *argv[]) {
+  (void)argv;
+  
+  if(argc>0){
+    chprintf(chp,"bad commands\n\r");
+    return;
+  }
+  palTogglePad(PORT_LED,L3);
+  return;
+}
+
 static const ShellCommand commands[] = {
   {"test",cmd_test},
   {"foward",cmd_foward},
@@ -79,6 +90,7 @@ static const ShellCommand commands[] = {
   {"right",cmd_right},
   {"left",cmd_left},
   {"stop",cmd_stop},
+  {"booted",cmd_booted},
   {NULL, NULL}
 };
 

@@ -34,9 +34,12 @@ private slots:
 
     void on_actionStop_triggered();
 
+    void booted();
+
 private:
     Ui::qrobot *ui;
     QextSerialPort *my_port;
+    QTimer* my_timer;
 };
 
 #endif // QROBOT_H
