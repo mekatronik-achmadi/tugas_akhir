@@ -48,24 +48,7 @@ private:
     QextSerialPort *my_port;
     QTimer* my_cam_timer;
     QTimer* my_timer;
-
-    int iLowH = 0;
-    int iHighH = 179;
-
-    int iLowS = 171;
-    int iHighS = 255;
-
-    int iLowV = 120;
-    int iHighV = 255;
-
     cv::VideoCapture cam;
-
-
-
-
-
-
-
 };
 
 #endif // QROBOT_H

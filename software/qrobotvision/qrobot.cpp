@@ -1,6 +1,15 @@
 #include "qrobot.h"
 #include "ui_qrobot.h"
 
+int iLowH = 0;
+int iHighH = 179;
+
+int iLowS = 171;
+int iHighS = 255;
+
+int iLowV = 120;
+int iHighV = 255;
+
 qrobot::qrobot(QWidget *parent) :
     QMainWindow(parent),my_port(0),
     ui(new Ui::qrobot)
