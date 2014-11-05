@@ -1,6 +1,10 @@
 \documentclass[table,dvipsnames]{beamer}
 \mode<presentation>{
 \usetheme{Madrid}
+\setbeamercolor{title}{fg=Black,bg=Blue!15}
+\setbeamercolor{frametitle}{fg=Black,bg=Blue!15}
+\setbeamercolor{block title}{fg=Black,bg=Blue!15}
+\setbeamercolor{block}{fg=Black,bg=Blue!10}
 }
 
 \usepackage{default}
@@ -27,14 +31,16 @@ Ir. Apriani K. MSc NIP: 195304041979012001
 
 \begin{document}
 
+\section{Judul}
+
 \begin{frame}
 \titlepage
 \end{frame}
 
-\begin{frame}
-\frametitle{Overview}
-\tableofcontents
-\end{frame}
+%\begin{frame}
+%\frametitle{Overview}
+%\tableofcontents
+%\end{frame}
 
 \section{Pendahuluan}
 
@@ -58,7 +64,7 @@ Ir. Apriani K. MSc NIP: 195304041979012001
 
 \begin{frame}
 \frametitle{Latar Belakang}
-\framesubtitle{Mengapa Vision Digunakan?}
+\framesubtitle{Robot Vision}
 \begin{block}{\cite{why_vision}}
 Dengan ketersediaannya yang luas, konten informasi tinggi, dan kesesuaian untuk lingkungan manusia serta harga yang murah dari kamera warna, sistem vision menjadi cocok untuk banyak platform robot.
 \end{block}
@@ -79,7 +85,7 @@ Harga : \$2.500.000\\
 
 \begin{frame}
 \frametitle{Latar Belakang}
-\framesubtitle{Alternatif CPU Murah}
+\framesubtitle{Single Board Computer Raspberry Pi}
 \begin{center}
  \includegraphics[width=150pt]{./latar_belakang/raspi/raspi}
 \end{center}
@@ -105,7 +111,7 @@ Bagaimana merancang bangun robot vision berbasis color tracking menggunakan Open
 \begin{frame}
 \frametitle{Batasan Masalah}
 \begin{block}{}
-Kajian rancang bangun robot yang menggunakan kamera dan pengolahan citra untuk menemukan objek berdasarkan warna yang dimiliki objek tersebut.
+Posisi objek terhadap robot telah ditentukan.
 \end{block}
 \begin{block}{}
 Objek yang akan diolah telah ditentukan ukuran dan warnanya.
@@ -115,12 +121,24 @@ Robot bekerja pada tingkat pencahayaan yang telah diatur.
 \end{block}
 \end{frame}
 
-\begin{frame}
-\frametitle{Overview}
-\tableofcontents
-\end{frame}
+%\begin{frame}
+%\frametitle{Overview}
+%\tableofcontents
+%\end{frame}
 
 \section{Teori Penunjang}
+
+\subsection{Object Finding}
+
+\begin{frame}
+\frametitle{Menemukan suatu objek (Object Finding)}
+\begin{block}{}
+Robot mampu mendapatkan posisi objek terhadap dirinya berdasarkan pengolahan citra yang didapatkan oleh kamera yang ada pada robot.
+\end{block}
+\begin{block}{}
+Robot mampu mendekati objek berdasarkan informasi yang diperoleh dari proses penentuan posisi sebelumnya.
+\end{block}
+\end{frame}
 
 \subsection{Mode Warna HSV}
 
@@ -196,6 +214,16 @@ Jika tidak sebaliknya maka nilainya dikonversi ke 0 (hitam).
   \end{cases}
 \end{equation}
 \end{block}
+\begin{block}{}
+Konversi ke binary image.
+\begin{equation}
+  B(i,j) =  
+  \begin{cases}
+      1,& P(i,j)=255\\
+      0,& P(i,j)=0 \\
+  \end{cases}
+\end{equation}
+\end{block}
 \end{frame}
 
 \subsection{Titik Pusat}
@@ -250,10 +278,10 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 \end{block}
 \end{frame}
 
-\begin{frame}
-\frametitle{Overview}
-\tableofcontents
-\end{frame}
+%\begin{frame}
+%\frametitle{Overview}
+%\tableofcontents
+%\end{frame}
 
 \section{Metode Penelitian}
 
@@ -264,30 +292,30 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 \end{center}
 \end{frame}
 
-\section{Jadwal Pengerjaan}
-
-\begin{frame}
-\frametitle{Jadwal Pengerjaan}
-\begin{table}
- \begin{tabular}{ |l|l|l|l|l|l| }
-   \hline
-   No & Kegiatan & \multicolumn{3}{|c|}{Bulan} \\
-   \hline
-     &  & Oktober & November & Desember \\
-   \hline
-   1 & Studi literatur & \cellcolor{blue} & \cellcolor{blue} & \\
-   \hline
-   2 & Perancangan dan Pembuatan & \cellcolor{blue} & \cellcolor{blue} & \\
-   \hline
-   3 & Pengambilan Data & & \cellcolor{blue} & \cellcolor{blue} \\
-   \hline
-   4 & Analisa Data & & & \cellcolor{blue} \\
-   \hline
-   5 & Penulisan Laporan & & \cellcolor{blue} & \cellcolor{blue} \\
-  \hline
-\end{tabular}
-\end{table}
-\end{frame}
+%\section{Jadwal Pengerjaan}
+%
+%\begin{frame}
+%\frametitle{Jadwal Pengerjaan}
+%\begin{table}
+% \begin{tabular}{ |l|l|l|l|l|l| }
+%   \hline
+%   No & Kegiatan & \multicolumn{3}{|c|}{Bulan} \\
+%   \hline
+%     &  & Oktober & November & Desember \\
+%   \hline
+%   1 & Studi literatur & \cellcolor{blue} & \cellcolor{blue} & \\
+%   \hline
+%   2 & Perancangan dan Pembuatan & \cellcolor{blue} & \cellcolor{blue} & \\
+%   \hline
+%   3 & Pengambilan Data & & \cellcolor{blue} & \cellcolor{blue} \\
+%   \hline
+%   4 & Analisa Data & & & \cellcolor{blue} \\
+%   \hline
+%   5 & Penulisan Laporan & & \cellcolor{blue} & \cellcolor{blue} \\
+%  \hline
+%\end{tabular}
+%\end{table}
+%\end{frame}
 
 \section{Daftar Pustaka}
 
@@ -330,6 +358,50 @@ Robot telah dapat:
 \end{block}
 \begin{block}{}
 VIDEO
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hasil Rakitan}
+\begin{center}
+ \includegraphics[width=200pt]{./progress/builded}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Detail Bagian}
+\begin{center}
+ \includegraphics[width=250pt]{./progress/detail}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Flow Chart Robot}
+\begin{center}
+ \includegraphics[width=200pt]{./progress/flowprogress}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Jangkauan Thresholding}
+
+\begin{block}{Jangkauan HSV untuk warna Merah}
+\begin{equation}
+160 \leq H\leq 179
+\end{equation}
+\begin{equation}
+171 \leq S\leq 255
+\end{equation}
+\begin{equation}
+120 \leq V\leq 255
+\end{equation}
+\end{block}
+
+\begin{block}{Contoh hasil Thresholding}
+\begin{center}
+ \includegraphics[width=100pt]{./progress/imgori}
+ \includegraphics[width=100pt]{./progress/imgthresh}
+\end{center}
 \end{block}
 \end{frame}
 
