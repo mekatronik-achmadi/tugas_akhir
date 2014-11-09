@@ -128,6 +128,16 @@ Robot bekerja pada tingkat pencahayaan yang telah diatur.
 
 \section{Teori Penunjang}
 
+\subsection{Robot Vision}
+
+\begin{frame}
+\frametitle{Robot Vision}
+\begin{block}{\cite{robot_vis}}
+ Robot Vision adalah mesin automatis atau semi-automatis yang mampu memperoleh informasi melalui proses akuisisi dan pemrosesan citra.
+\end{block}
+\end{frame}
+
+
 \subsection{Object Finding}
 
 \begin{frame}
@@ -226,6 +236,27 @@ Konversi ke binary image.
 \end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle{Jangkauan Thresholding}
+\begin{block}{Jangkauan HSV untuk warna Merah}
+\begin{equation}
+160 \leq H\leq 179
+\end{equation}
+\begin{equation}
+171 \leq S\leq 255
+\end{equation}
+\begin{equation}
+120 \leq V\leq 255
+\end{equation}
+\end{block}
+\begin{block}{Contoh hasil Thresholding}
+\begin{center}
+ \includegraphics[width=100pt]{./progress/imgori}
+ \includegraphics[width=100pt]{./progress/imgthresh}
+\end{center}
+\end{block}
+\end{frame}
+
 \subsection{Titik Pusat}
 
 \begin{frame}
@@ -278,6 +309,24 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 \end{block}
 \end{frame}
 
+\subsection{Rancangan Robot}
+
+\begin{frame}
+ \frametitle{Rancangan Bagian Robot}
+ \begin{center}
+ \includegraphics[width=300pt]{./bagian_robot/parts.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rancangan Flow Chart Robot}
+% edit ke non-standard flowchart
+% tambahkan simbol komponen
+\begin{center}
+ \includegraphics[width=250pt]{./proses_robot/process}
+\end{center}
+\end{frame}
+
 %\begin{frame}
 %\frametitle{Overview}
 %\tableofcontents
@@ -287,8 +336,9 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 
 \begin{frame}
 \frametitle{Flow Chart Pengerjaan}
+% edit ke non-standard flowchart
 \begin{center}
- \includegraphics[width=50pt]{./met_pen/flow}
+ \includegraphics[width=150pt]{./pengerjaan/work}
 \end{center}
 \end{frame}
 
@@ -318,11 +368,12 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 %\end{frame}
 
 \section{Daftar Pustaka}
-
+% 
 \begin{frame}
 \frametitle{Daftar Pustaka}
 \footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\begin{thebibliography}{99}
+\bibitem[Budiharto,2012]{robot_vis} Widodo Budiharto, Djoko Purwanto \textit{Robot Vision} 2012
 \bibitem[Brett, 2010]{why_vision} Brett Browning, Manuela Veloso \textit{Real-Time, Adaptive Color-based Robot Vision} 2010
 \bibitem[Honda, 2007]{asimo_cpu} Honda Public Division \textit{Asimo Technical Information} 2007
 \bibitem{robot_vision} Aleš Ude \textit{Robot Vision} 2010
@@ -341,69 +392,69 @@ Lumbung Software (Repository) dari Raspbian telah menyediakan binary siap pakai 
 \Huge{\centerline{Mator Sakalangkong}}
 \end{frame}
 
-\section{Pencapaian terkini}
+% \section{Pencapaian terkini}
+% 
+% \begin{frame}
+% \frametitle{Pencapaian terkini}
+% \begin{block}{Hardware}
+% Robot telah dirakit dan mampu bergerak sesuai perintah yang dikirim melalui komunikasi serial UART.
+% \end{block}
+% \begin{block}{Software}
+% Robot telah dapat:
+% \begin{itemize}
+% \item Mengambil Citra dari WebCamera melalui jalur USB
+% \item Mengkonversi gambar ke HSV
+% \item Men-Treshold gambar sesuai jangkauan yang telah diatur
+% \end{itemize}
+% \end{block}
+% \begin{block}{}
+% VIDEO
+% \end{block}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Hasil Rakitan}
+% \begin{center}
+%  \includegraphics[width=200pt]{./progress/builded}
+% \end{center}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Detail Bagian}
+% \begin{center}
+%  \includegraphics[width=250pt]{./progress/detail}
+% \end{center}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Flow Chart Robot}
+% \begin{center}
+%  \includegraphics[width=200pt]{./progress/flowprogress}
+% \end{center}
+% \end{frame}
 
-\begin{frame}
-\frametitle{Pencapaian terkini}
-\begin{block}{Hardware}
-Robot telah dirakit dan mampu bergerak sesuai perintah yang dikirim melalui komunikasi serial UART.
-\end{block}
-\begin{block}{Software}
-Robot telah dapat:
-\begin{itemize}
-\item Mengambil Citra dari WebCamera melalui jalur USB
-\item Mengkonversi gambar ke HSV
-\item Men-Treshold gambar sesuai jangkauan yang telah diatur
-\end{itemize}
-\end{block}
-\begin{block}{}
-VIDEO
-\end{block}
-\end{frame}
-
-\begin{frame}
-\frametitle{Hasil Rakitan}
-\begin{center}
- \includegraphics[width=200pt]{./progress/builded}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Detail Bagian}
-\begin{center}
- \includegraphics[width=250pt]{./progress/detail}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Flow Chart Robot}
-\begin{center}
- \includegraphics[width=200pt]{./progress/flowprogress}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Jangkauan Thresholding}
-
-\begin{block}{Jangkauan HSV untuk warna Merah}
-\begin{equation}
-160 \leq H\leq 179
-\end{equation}
-\begin{equation}
-171 \leq S\leq 255
-\end{equation}
-\begin{equation}
-120 \leq V\leq 255
-\end{equation}
-\end{block}
-
-\begin{block}{Contoh hasil Thresholding}
-\begin{center}
- \includegraphics[width=100pt]{./progress/imgori}
- \includegraphics[width=100pt]{./progress/imgthresh}
-\end{center}
-\end{block}
-\end{frame}
+% \begin{frame}
+% \frametitle{Jangkauan Thresholding}
+% 
+% \begin{block}{Jangkauan HSV untuk warna Merah}
+% \begin{equation}
+% 160 \leq H\leq 179
+% \end{equation}
+% \begin{equation}
+% 171 \leq S\leq 255
+% \end{equation}
+% \begin{equation}
+% 120 \leq V\leq 255
+% \end{equation}
+% \end{block}
+% 
+% \begin{block}{Contoh hasil Thresholding}
+% \begin{center}
+%  \includegraphics[width=100pt]{./progress/imgori}
+%  \includegraphics[width=100pt]{./progress/imgthresh}
+% \end{center}
+% \end{block}
+% \end{frame}
 
 \section{Catatan}
 

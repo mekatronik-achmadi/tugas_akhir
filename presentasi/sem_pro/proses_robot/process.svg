@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="process.svg"
+   inkscape:export-filename="/home/development/Projects/tugas_akhir/presentasi/sem_pro/proses_robot/process.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.45254834"
+     inkscape:cx="328.10329"
+     inkscape:cy="-357.05873"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3104"
+       transform="translate(-16.162441,-14.142136)">
+      <rect
+         ry="52.857143"
+         y="95.219322"
+         x="-388.57144"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037"
+         y="163.79076"
+         x="-240.00002"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="163.79076"
+           x="-240.00002"
+           id="tspan3039"
+           sodipodi:role="line">Mulai</tspan></text>
+    </g>
+    <g
+       id="g3099"
+       transform="translate(-314.28571,-368.57143)">
+      <rect
+         ry="0"
+         y="782.36218"
+         x="-65.714287"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037-5"
+         y="850.13147"
+         x="-13.417958"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="850.13147"
+           x="-13.417958"
+           id="tspan3039-6"
+           sodipodi:role="line">Ambil Gambar</tspan></text>
+    </g>
+    <g
+       id="g3881"
+       transform="translate(16.162441,-4.0406102)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       y="406.98135"
+       x="-593.07367"
+       id="image3944"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/webcam-c170-feature-detail-image.png"
+       height="129.08627"
+       width="218.42125" />
+    <g
+       id="g3977"
+       transform="translate(0,28.571429)">
+      <rect
+         ry="0"
+         y="710.93359"
+         x="-377.14285"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0-9"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037-5-2"
+         y="781.56006"
+         x="-353.41794"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="781.56006"
+           x="-353.41794"
+           id="tspan3039-6-9"
+           sodipodi:role="line">Konversi RGB/HSV</tspan></text>
+    </g>
+    <g
+       id="g3881-4"
+       transform="translate(20.946663,326.11676)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-8"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111-8"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       y="721.2193"
+       x="-589.50006"
+       id="image4065"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="136.57143"
+       width="173.28572" />
+    <g
+       id="g4142">
+      <rect
+         ry="0"
+         y="1059.505"
+         x="-374.28574"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0-9-3"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037-5-2-1"
+         y="1130.1315"
+         x="-350.56082"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1130.1315"
+           x="-350.56082"
+           id="tspan3039-6-9-5"
+           sodipodi:role="line">Segmentasi</tspan></text>
+    </g>
+    <g
+       id="g3881-4-1"
+       transform="translate(38.089517,646.11676)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-8-1"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111-8-7"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       y="1052.6479"
+       x="-578.07141"
+       id="image4065-6"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="136.57143"
+       width="173.28572" />
+    <g
+       id="g4238">
+      <rect
+         ry="0"
+         y="93.255035"
+         x="297.14285"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0-9-3-3"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037-5-2-1-7"
+         y="163.8815"
+         x="320.86777"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="163.8815"
+           x="320.86777"
+           id="tspan3039-6-9-5-0"
+           sodipodi:role="line">Centroid dan Area</tspan></text>
+    </g>
+    <image
+       y="74.701477"
+       x="741.48218"
+       id="image4065-6-1"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="136.57143"
+       width="173.28572" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3109-8-1-9"
+       sodipodi:sides="3"
+       sodipodi:cx="-217.85715"
+       sodipodi:cy="354.50504"
+       sodipodi:r1="34.912426"
+       sodipodi:r2="17.456213"
+       sodipodi:arg1="-0.53691074"
+       sodipodi:arg2="0.51028681"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+       inkscape:transform-center-x="-8.5260977"
+       inkscape:transform-center-y="0.23236967"
+       transform="matrix(0,-1,1,0,-123.02266,-72.190712)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 209.92233,140.85734 -60.76699,0 14.63908,986.50486 -100.000003,-3.125"
+       id="path4233"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4315">
+      <rect
+         ry="0"
+         y="449.50504"
+         x="300.26785"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0-9-3-3-6"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3037-5-2-1-7-1"
+         y="520.13147"
+         x="323.99277"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="520.13147"
+           x="323.99277"
+           id="tspan3039-6-9-5-0-2"
+           sodipodi:role="line">Posisi Objek</tspan></text>
+    </g>
+    <g
+       id="g3881-9"
+       transform="translate(724.33952,14.598899)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-9"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111-1"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       y="427.82648"
+       x="753.98212"
+       id="image4065-6-1-3"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="136.57143"
+       width="173.28572" />
+    <g
+       id="g4514">
+      <rect
+         inkscape:transform-center-y="-57.857143"
+         inkscape:transform-center-x="37.5"
+         ry="0"
+         y="830.755"
+         x="297.14285"
+         height="105.71429"
+         width="405.71429"
+         id="rect3035-0-9-3-3-6-3"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         inkscape:transform-center-y="-57.372978"
+         inkscape:transform-center-x="62.481842"
+         sodipodi:linespacing="125%"
+         id="text3037-5-2-1-7-1-2"
+         y="895.13147"
+         x="317.74277"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="895.13147"
+           x="317.74277"
+           id="tspan3039-6-9-5-0-2-5"
+           sodipodi:role="line">Robot Bergerak</tspan></text>
+    </g>
+    <g
+       id="g3881-9-4"
+       transform="translate(718.0895,395.8489)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-9-3"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111-1-2"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <image
+       y="817.98718"
+       x="721.875"
+       id="image4435"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/driver_controller.png"
+       height="146.875"
+       width="237.5" />
+    <image
+       y="800.36218"
+       x="942"
+       id="image4481"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/dc-geared.jpg"
+       height="182.125"
+       width="225.375" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:17.31662369;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4484"
+       width="259.57788"
+       height="259.92096"
+       x="-1489.8777"
+       y="-766.1618"
+       transform="matrix(-0.70692832,-0.70728519,0.73232281,-0.68095763,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="364.59961"
+       y="1407.1473"
+       id="text3037-5-2-1-7-1-2-7"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="62.481842"
+       inkscape:transform-center-y="-57.372978"><tspan
+         sodipodi:role="line"
+         id="tspan3039-6-9-5-0-2-5-6"
+         x="364.59961"
+         y="1407.1473">Menemukan ?</tspan></text>
+    <g
+       id="g3881-9-4-7"
+       transform="translate(718.08952,761.4739)">
+      <path
+         inkscape:transform-center-y="8.5260954"
+         inkscape:transform-center-x="0.23236968"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-9-3-1"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3111-1-2-8"
+         d="m -220,333.79076 -2.14285,-111.42857"
+         style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g4563"
+       transform="translate(6.25,0)">
+      <path
+         transform="matrix(0,-1,1,0,-984.9061,231.14766)"
+         inkscape:transform-center-y="0.23236967"
+         inkscape:transform-center-x="-8.5260977"
+         d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.51028681"
+         sodipodi:arg1="-0.53691074"
+         sodipodi:r2="17.456213"
+         sodipodi:r1="34.912426"
+         sodipodi:cy="354.50504"
+         sodipodi:cx="-217.85715"
+         sodipodi:sides="3"
+         id="path3109-8-1-9-7"
+         style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4561"
+         d="m 275.1605,1390.0227 c -21.88159,0 -1065.946,0 -1065.946,0 l 3.12594,-925.52186 140.66736,-6.04916"
+         style="fill:none;stroke:#000000;stroke-width:19.67899895;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3035-05"
+       width="405.71429"
+       height="105.71429"
+       x="703.12347"
+       y="1613.8041"
+       ry="52.857143" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="851.69489"
+       y="1682.3755"
+       id="text3037-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3039-0"
+         x="851.69489"
+         y="1682.3755">Selesai</tspan></text>
+    <image
+       y="1306.694"
+       x="783.98242"
+       id="image4065-6-6"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="136.57143"
+       width="173.28572" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3109-8-1-9-6"
+       sodipodi:sides="3"
+       sodipodi:cx="-217.85715"
+       sodipodi:cy="354.50504"
+       sodipodi:r1="34.912426"
+       sodipodi:r2="17.456213"
+       sodipodi:arg1="-0.53691074"
+       sodipodi:arg2="0.51028681"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -187.85715,336.64789 -14.76763,26.38324 -14.76763,26.38324 -15.46474,-25.98076 -15.46474,-25.98076 30.23237,-0.40248 z"
+       inkscape:transform-center-x="-8.5260977"
+       inkscape:transform-center-y="0.23236967"
+       transform="matrix(0,-1,1,0,279.9941,1450.7814)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:22.47740936;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 491.79403,1594.9795 0,85.911 123.47599,-4.2956"
+       id="path3073"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="296.26477"
+       y="1666.1053"
+       id="text3037-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3039-0-6"
+         x="296.26477"
+         y="1666.1053">Ya</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="66.455063"
+       y="1491.5383"
+       id="text3037-4-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3039-0-3"
+         x="66.455063"
+         y="1491.5383">Tidak</tspan></text>
+  </g>
+</svg>
