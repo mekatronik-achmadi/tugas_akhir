@@ -29,13 +29,13 @@ static void gpt3cb(GPTDriver *gptp) {
       palClearPad(PORT_LED,RIGHT_I);
       palClearPad(PORT_LED,LEFT_I);
     }  
-    else if(dir==RIGHT){
+    else if(dir==LEFT){
       Right_back();
       Left_fow();
       palClearPad(PORT_LED,RIGHT_I);
       palSetPad(PORT_LED,LEFT_I);
     }  
-    else if(dir==LEFT){
+    else if(dir==RIGHT){
       Right_fow();
       Left_back();
       palSetPad(PORT_LED,RIGHT_I);
