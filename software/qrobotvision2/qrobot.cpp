@@ -194,11 +194,11 @@ void qrobot::img_proc()
 
     cv::Mat imgThresholded;
     cv::inRange(imgHSV, cv::Scalar(iLowH, iLowS, iLowV), cv::Scalar(iHighH, iHighS, iHighV), imgThresholded);
-    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
-    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
+//    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
+//    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
 
-    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
-    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
+//    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
+//    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
     cv::imshow("Thresholded Image", imgThresholded);
 
     imgRows = imgThresholded.rows;
@@ -226,10 +226,6 @@ void qrobot::img_proc()
         mArea.at<ushort>(0,0)=mArea.at<ushort>(0,0)+xval.at<ushort>(0,i);
     }
     Area=mArea.at<ushort>(0,0);
-
-    imgCen = cv::Mat( imgOriginal.size(), CV_8UC3,cv::Scalar(0,0,0));
-    vCen=25;
-    cv::circle(imgCen,cv::Point(xcen,ycen),vCen,cv::Scalar(0,255,0),2);
 
     if(Area>=1000){
         mxSum=cv::Mat(1,1,CV_32F,cv::Scalar(0));
@@ -260,6 +256,10 @@ void qrobot::img_proc()
 
         std::cout << "xcen= " << xcen << " " << "ycen= " << ycen << " " << "Area= " << Area << std::endl;
     }
+
+    imgCen = cv::Mat( imgOriginal.size(), CV_8UC3,cv::Scalar(0,0,0));
+    vCen=25;
+    cv::circle(imgCen,cv::Point(xcen,ycen),vCen,cv::Scalar(0,255,0),2);
 
     imgRad= cv::Mat( imgOriginal.size(), CV_8UC3,cv::Scalar(0,0,0));
     vRad=45;

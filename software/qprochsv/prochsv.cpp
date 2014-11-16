@@ -1,14 +1,14 @@
 #include "prochsv.h"
 #include "ui_prochsv.h"
 
-int iLowH = 0;
-int iHighH = 5;
+int iLowH = 100;
+int iHighH = 130;
 
-int iLowS = 150;
+int iLowS = 100;
 int iHighS = 180;
 
-int iLowV = 150;
-int iHighV = 180;
+int iLowV = 70;
+int iHighV = 130;
 
 prochsv::prochsv(QWidget *parent) :
     QMainWindow(parent),
@@ -17,7 +17,7 @@ prochsv::prochsv(QWidget *parent) :
 
 
     ui->setupUi(this);
-    imgOri = cv::imread("imgcap_9.png");
+    imgOri = cv::imread("imgcap_3.png");
 
     cv::Mat imgHSV;
     cv::cvtColor(imgOri,imgHSV,cv::COLOR_BGR2HSV);
@@ -79,4 +79,66 @@ void prochsv::img_calc()
     cv::Mat imgThresholded;
     cv::inRange(imgHSV, cv::Scalar(iLowH, iLowS, iLowV), cv::Scalar(iHighH, iHighS, iHighV), imgThresholded);
     cv::imshow("Thresholded Image", imgThresholded);
+
+    imgBiner = cv::Mat(imgOri.size(),CV_8U,cv::Scalar(0));
+
+    for(i=0;i<vRow;i++){
+        for(j=0;j<vCol;j++){
+            if(imgThresholded.at<uchar>(i,j)==255){imgBiner.at<uchar>(i,j)=1;}
+            else{imgBiner.at<uchar>(i,j)=0;}
+        }
+    }
+
+    xval=cv::Mat(1,vCol,CV_16U,cv::Scalar(0));
+    for(i=0;i<vCol;i++){
+        xval.at<ushort>(0,i)=0;
+        for(j=0;j<vRow;j++){
+            xval.at<ushort>(0,i)=xval.at<ushort>(0,i)+imgBiner.at<uchar>(j,i);
+        }
+    }
+
+    mArea=cv::Mat(1,1,CV_16U,cv::Scalar(0));
+    for(i=0;i<vCol;i++){
+        mArea.at<ushort>(0,0)=mArea.at<ushort>(0,0)+xval.at<ushort>(0,i);
+    }
+    Area=mArea.at<ushort>(0,0);
+    ui->txtArea->setText(QString::number(Area));
+
+    mxSum=cv::Mat(1,1,CV_32F,cv::Scalar(0));
+    for(i=0;i<vCol;i++){
+        mxSum.at<float>(0,0)=mxSum.at<float>(0,0)+(i*xval.at<ushort>(0,i));
+    }
+    xSum=mxSum.at<float>(0,0);
+
+    xcen=xSum/Area;
+
+    yval=cv::Mat(1,vRow,CV_16U,cv::Scalar(0));
+    for(i=0;i<vRow;i++){
+        yval.at<ushort>(0,i)=0;
+        for(j=0;j<vCol;j++){
+            yval.at<ushort>(0,i)=yval.at<ushort>(0,i)+imgBiner.at<uchar>(i,j);
+        }
+    }
+
+    mySum=cv::Mat(1,1,CV_32F,cv::Scalar(0));
+
+    for(i=0;i<vRow;i++){
+        mySum.at<float>(0,0)=mySum.at<float>(0,0)+(i*yval.at<ushort>(0,i));
+    }
+
+    ySum=mySum.at<float>(0,0);
+
+    ycen=ySum/Area;
+
+    imgCen = cv::Mat( imgOri.size(), CV_8UC3,cv::Scalar(0,0,0));
+    vCen=25;
+    cv::circle(imgCen,cv::Point(xcen,ycen),vCen,cv::Scalar(0,255,0),2);
+
+    imgRad= cv::Mat( imgOri.size(), CV_8UC3,cv::Scalar(0,0,0));
+    vRad=45;
+    cv::circle(imgRad,cv::Point(vCol/2,vRow/2),vRad,cv::Scalar(0,255,0),2);
+
+    imgFinal = imgOri + imgRad+imgCen;
+    cv::imshow("Final", imgFinal);
+
 }

@@ -41,6 +41,31 @@ private:
     cv::Mat imgchan[3];
 
     uchar vHue,vSat,vVal;
+
+    uint i,j;
+
+    cv::Mat imgBiner;
+
+    cv::Mat mArea;
+    uint Area;
+
+    cv::Mat xval;
+    cv::Mat mxSum;
+    float xSum;
+    uint xcen;
+
+    cv::Mat yval;
+    cv::Mat mySum;
+    float ySum;
+    uint ycen;
+
+    cv::Mat imgRad;
+    uint vRad;
+
+    cv::Mat imgCen;
+    uint vCen;
+
+    cv::Mat imgFinal;
 };
 
 #endif // PROCHSV_H
