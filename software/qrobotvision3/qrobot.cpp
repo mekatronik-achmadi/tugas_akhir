@@ -295,6 +295,8 @@ void qrobot::move_proc(){
 
     vDef = 25;
     vArea= Area;
+    
+    std::cout << "xPos= " << xPos << " " << "yPos= " << yPos << " " << "Area= " << vArea << std::endl;
 
     if((Area>300)&&(Area<=48000)){
         if(xPos<xDef){
