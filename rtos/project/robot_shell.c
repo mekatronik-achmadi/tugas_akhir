@@ -25,7 +25,7 @@ static void cmd_foward(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=FOWARD;
-  chThdSleepMilliseconds(delay);
+  chThdSleepMilliseconds(delay+150);
   dir=STOP;
   return;
 }
@@ -38,7 +38,7 @@ static void cmd_backward(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=BACKWARD;
-  chThdSleepMilliseconds(delay);
+  chThdSleepMilliseconds(delay+150);
   dir=STOP;
   return;
 }
