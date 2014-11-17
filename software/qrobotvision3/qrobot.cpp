@@ -10,8 +10,8 @@ int iHighS = 180;
 int iLowV = 70;
 int iHighV = 180;
 
-int minArea = 300;
-int maxArea = 35000;
+uint minArea = 300;
+uint maxArea = 35000;
 
 qrobot::qrobot(QWidget *parent) :
     QMainWindow(parent),my_port(0),
@@ -212,11 +212,6 @@ void qrobot::img_proc()
 
     cv::Mat imgThresholded;
     cv::inRange(imgHSV, cv::Scalar(iLowH, iLowS, iLowV), cv::Scalar(iHighH, iHighS, iHighV), imgThresholded);
-//    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
-//    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
-
-//    dilate( imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
-//    erode(imgThresholded, imgThresholded, cv::getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(5, 5)) );
     cv::imshow("Thresholded Image", imgThresholded);
 
     imgRows = imgThresholded.rows;
