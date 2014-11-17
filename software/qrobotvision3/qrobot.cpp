@@ -10,6 +10,9 @@ int iHighS = 180;
 int iLowV = 70;
 int iHighV = 180;
 
+int minArea = 300;
+int maxArea = 35000;
+
 qrobot::qrobot(QWidget *parent) :
     QMainWindow(parent),my_port(0),
     ui(new Ui::qrobot)
@@ -242,7 +245,7 @@ void qrobot::img_proc()
     }
     Area=mArea.at<ushort>(0,0);
 
-    if((Area>300)&&(Area<=48000)){
+    if((Area>minArea)&&(Area<=maxArea)){
 
         mxSum=cv::Mat(1,1,CV_32F,cv::Scalar(0));
         for(i=0;i<imgCols;i++){
@@ -270,7 +273,6 @@ void qrobot::img_proc()
 
         ycen=ySum/Area;
 
-//        std::cout << "xcen= " << xcen << " " << "ycen= " << ycen << " " << "Area= " << Area << std::endl;
     }
 
     imgCen = cv::Mat( imgOriginal.size(), CV_8UC3,cv::Scalar(0,0,0));
@@ -296,7 +298,7 @@ void qrobot::move_proc(){
     vDef = 25;
     vArea= Area;
     
-    if((Area>300)&&(Area<=48000)){
+    if((Area>minArea)&&(Area<=maxArea)){
       
       std::cout << "xPos= " << xPos << " " << "yPos= " << yPos << " " << "Area= " << vArea << std::endl;
       
@@ -324,6 +326,10 @@ void qrobot::move_proc(){
 	  qrobot::on_actionFoward_triggered();
 	  std::cout << "FOWARD" << std::endl;
       }
+    }
+    else{
+      std::cout << "xPos= " << xPos << " " << "yPos= " << yPos << " " << "Area= " << vArea << std::endl;
+      std::cout << "STOP" << std::endl;
     }
 }
 
