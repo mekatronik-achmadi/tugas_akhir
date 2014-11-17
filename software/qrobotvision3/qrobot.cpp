@@ -296,33 +296,34 @@ void qrobot::move_proc(){
     vDef = 25;
     vArea= Area;
     
-    std::cout << "xPos= " << xPos << " " << "yPos= " << yPos << " " << "Area= " << vArea << std::endl;
-
     if((Area>300)&&(Area<=48000)){
-        if(xPos<xDef){
-            if((xDef-xPos)>vDef){
-                qrobot::on_actionLeft_triggered();
-                std::cout << "LEFT" << std::endl;
-            }
-            else{
-                qrobot::on_actionFoward_triggered();
-                std::cout << "FOWARD" << std::endl;
-            }
-        }
-        else if(xPos>xDef){
-            if((xPos-xDef)>vDef){
-                qrobot::on_actionRight_triggered();
-                std::cout << "RIGHT" << std::endl;
-            }
-            else{
-                qrobot::on_actionFoward_triggered();
-                std::cout << "FOWARD" << std::endl;
-            }
-        }
-        else if(xPos==xDef){
-            qrobot::on_actionFoward_triggered();
-            std::cout << "FOWARD" << std::endl;
-        }
+      
+      std::cout << "xPos= " << xPos << " " << "yPos= " << yPos << " " << "Area= " << vArea << std::endl;
+      
+      if(xPos<xDef){
+	  if((xDef-xPos)>vDef){
+	      qrobot::on_actionLeft_triggered();
+	      std::cout << "LEFT" << std::endl;
+	  }
+	  else{
+	      qrobot::on_actionFoward_triggered();
+	      std::cout << "FOWARD" << std::endl;
+	  }
+      }
+      else if(xPos>xDef){
+	  if((xPos-xDef)>vDef){
+	      qrobot::on_actionRight_triggered();
+	      std::cout << "RIGHT" << std::endl;
+	  }
+	  else{
+	      qrobot::on_actionFoward_triggered();
+	      std::cout << "FOWARD" << std::endl;
+	  }
+      }
+      else if(xPos==xDef){
+	  qrobot::on_actionFoward_triggered();
+	  std::cout << "FOWARD" << std::endl;
+      }
     }
 }
 
