@@ -4,11 +4,11 @@
 int iLowH = 100;
 int iHighH = 130;
 
-int iLowS = 100;
+int iLowS = 70;
 int iHighS = 180;
 
 int iLowV = 70;
-int iHighV = 130;
+int iHighV = 180;
 
 qrobot::qrobot(QWidget *parent) :
     QMainWindow(parent),my_port(0),
@@ -242,7 +242,7 @@ void qrobot::img_proc()
     }
     Area=mArea.at<ushort>(0,0);
 
-    if(Area>=1000){
+    if((Area>300)&&(Area<=48000)){
 
         mxSum=cv::Mat(1,1,CV_32F,cv::Scalar(0));
         for(i=0;i<imgCols;i++){
@@ -296,7 +296,7 @@ void qrobot::move_proc(){
     vDef = 25;
     vArea= Area;
 
-    if(vArea>=1000){
+    if((Area>300)&&(Area<=48000)){
         if(xPos<xDef){
             if((xDef-xPos)>vDef){
                 qrobot::on_actionLeft_triggered();
