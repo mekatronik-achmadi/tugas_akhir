@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QTimer>
+#include <QFileDialog>
 
 #include <iostream>
 #include <opencv2/core/core.hpp>
@@ -26,8 +27,11 @@ private slots:
 
     void img_calc();
 
+    void on_btnFile_clicked();
+
 private:
     Ui::prochsv *ui;
+    QString imgFile;
     cv::Mat imgOri;
     QTimer* my_timer;
 

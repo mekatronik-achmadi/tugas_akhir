@@ -15,30 +15,10 @@ prochsv::prochsv(QWidget *parent) :
     ui(new Ui::prochsv)
 {
 
-
     ui->setupUi(this);
-    imgOri = cv::imread("imgcap_3.png");
-
-    cv::Mat imgHSV;
-    cv::cvtColor(imgOri,imgHSV,cv::COLOR_BGR2HSV);
-
-    vRow= imgOri.rows;
-    vCol= imgOri.cols;
-
-    ui->xVal->setMaximum(vCol);
-    ui->yVal->setMaximum(vRow);
-
-    cv::split(imgHSV,imgchan);
-
-    cv::imshow("Hue",imgchan[0]);
-    cv::imshow("Sat",imgchan[1]);
-    cv::imshow("Val",imgchan[2]);
-
-    cv::imshow("Ori",imgOri);
 
     my_timer= new QTimer(this);
     QObject::connect(my_timer,SIGNAL(timeout()),this,SLOT(img_calc()));
-    my_timer->start(100);
 
     cv::namedWindow("Control", CV_WINDOW_AUTOSIZE); //create a window called "Control"
 
@@ -140,5 +120,35 @@ void prochsv::img_calc()
 
     imgFinal = imgOri + imgRad+imgCen;
     cv::imshow("Final", imgFinal);
+
+}
+
+void prochsv::on_btnFile_clicked()
+{
+    if(my_timer->isActive()){
+        my_timer->stop();
+    }
+
+    imgFile = QFileDialog::getOpenFileName(this,"Select Picture","Portable Network Graphic (*.png)");
+    imgOri = cv::imread("imgcap_3.png");
+
+    cv::Mat imgHSV;
+    cv::cvtColor(imgOri,imgHSV,cv::COLOR_BGR2HSV);
+
+    vRow= imgOri.rows;
+    vCol= imgOri.cols;
+
+    ui->xVal->setMaximum(vCol);
+    ui->yVal->setMaximum(vRow);
+
+    cv::split(imgHSV,imgchan);
+
+    cv::imshow("Hue",imgchan[0]);
+    cv::imshow("Sat",imgchan[1]);
+    cv::imshow("Val",imgchan[2]);
+
+    cv::imshow("Ori",imgOri);
+
+    my_timer->start(100);
 
 }
