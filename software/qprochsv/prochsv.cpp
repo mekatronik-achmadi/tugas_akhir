@@ -130,7 +130,9 @@ void prochsv::on_btnFile_clicked()
     }
 
     imgFile = QFileDialog::getOpenFileName(this,"Select Picture","Portable Network Graphic (*.png)");
-    imgOri = cv::imread("imgcap_3.png");
+    ui->txtFile->setText(imgFile);
+
+    imgOri = cv::imread(imgFile.toStdString());
 
     cv::Mat imgHSV;
     cv::cvtColor(imgOri,imgHSV,cv::COLOR_BGR2HSV);
