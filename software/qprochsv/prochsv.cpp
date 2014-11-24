@@ -1,10 +1,10 @@
 #include "prochsv.h"
 #include "ui_prochsv.h"
 
-int iLowH = 100;
+int iLowH = 75;
 int iHighH = 130;
 
-int iLowS = 100;
+int iLowS = 70;
 int iHighS = 180;
 
 int iLowV = 70;
