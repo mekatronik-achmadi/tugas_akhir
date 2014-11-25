@@ -56,7 +56,6 @@ void prochsv::img_calc()
 
     cv::cvtColor(imgOri, imgHSV, cv::COLOR_BGR2HSV);
 
-    cv::Mat imgThresholded;
     cv::inRange(imgHSV, cv::Scalar(iLowH, iLowS, iLowV), cv::Scalar(iHighH, iHighS, iHighV), imgThresholded);
     cv::imshow("Thresholded Image", imgThresholded);
 
@@ -130,6 +129,11 @@ void prochsv::on_btnFile_clicked()
     }
 
     imgFile = QFileDialog::getOpenFileName(this,"Select Picture","Portable Network Graphic (*.png)");
+
+    if(imgFile.isEmpty()){
+        return;
+    }
+
     ui->txtFile->setText(imgFile);
 
     imgOri = cv::imread(imgFile.toStdString());
@@ -153,4 +157,49 @@ void prochsv::on_btnFile_clicked()
 
     my_timer->start(100);
 
+}
+
+void prochsv::on_btnSave_clicked()
+{
+    if(my_timer->isActive()){
+        my_timer->stop();
+    }
+
+    if(imgFile.isEmpty()){
+        return;
+    }
+
+    QString filesave= QFileDialog::getSaveFileName(this,"Select Existing Text File","Text File (*.txt)");
+    ui->txtFileSave->setText(filesave);
+
+    QFile filestream(filesave);
+    if(!filestream.open(QFile::WriteOnly|QFile::Text|QFile::Append)){
+        QMessageBox::critical(this,"Failed","File failed to save");
+        return;
+    }
+
+    QTextStream filewrite(&filestream);
+
+    //the format is ImgFile Smin Smax Vmin Vmax Area
+
+    QString strData;
+    strData += imgFile + "\t";
+    strData += QString::number(iLowS) + "\t";
+    strData += QString::number(iHighS) + "\t";
+    strData += QString::number(iLowV)  + "\t";
+    strData += QString::number(iHighV) + "\t";
+    strData += QString::number(Area) + "\n";
+
+    filewrite << strData ;
+
+    filestream.flush();
+    filestream.close();
+
+    cv::Mat imgSave;
+    imgSave = imgThresholded;
+
+    QString imgSaveName=imgFile + "_thres.png";
+    cv::imwrite(imgSaveName.toStdString(),imgSave);
+
+    my_timer->start(100);
 }

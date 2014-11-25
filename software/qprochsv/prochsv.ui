@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QSlider" name="xVal">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -28,6 +31,9 @@
     </property>
    </widget>
    <widget class="QSlider" name="yVal">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -46,10 +52,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>80</y>
+      <x>80</x>
+      <y>90</y>
       <width>221</width>
-      <height>191</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="title">
@@ -114,19 +120,6 @@
       <string>Sat</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>150</y>
-       <width>57</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Area</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="txtSat">
      <property name="geometry">
       <rect>
@@ -137,24 +130,14 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtArea">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>150</y>
-       <width>113</width>
-       <height>23</height>
-      </rect>
-     </property>
-    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>0</y>
-      <width>221</width>
-      <height>80</height>
+      <width>151</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -165,7 +148,7 @@
       <rect>
        <x>10</x>
        <y>40</y>
-       <width>161</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
@@ -173,7 +156,7 @@
     <widget class="QPushButton" name="btnFile">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>110</x>
        <y>40</y>
        <width>31</width>
        <height>23</height>
@@ -183,7 +166,71 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="folder"/>
+      <iconset theme="folder">
+       <normaloff/>
+      </iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Save to</string>
+    </property>
+    <widget class="QPushButton" name="btnSave">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>31</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset theme="media-floppy"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtArea">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>57</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Area</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtFileSave">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
      </property>
     </widget>
    </widget>

@@ -5,6 +5,8 @@
 #include <QMessageBox>
 #include <QTimer>
 #include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
 
 #include <iostream>
 #include <opencv2/core/core.hpp>
@@ -29,6 +31,8 @@ private slots:
 
     void on_btnFile_clicked();
 
+    void on_btnSave_clicked();
+
 private:
     Ui::prochsv *ui;
     QString imgFile;
@@ -37,6 +41,7 @@ private:
 
     uint vRow,vCol;
 
+    cv::Mat imgThresholded;
     cv::Mat imgHSV;
     cv::Mat imgShow;
     cv::Mat imgCirc;
