@@ -8,7 +8,7 @@ int iLowS = 70;
 int iHighS = 180;
 
 int iLowV = 70;
-int iHighV = 130;
+int iHighV = 180;
 
 prochsv::prochsv(QWidget *parent) :
     QMainWindow(parent),
@@ -169,7 +169,8 @@ void prochsv::on_btnSave_clicked()
         return;
     }
 
-    QString filesave= QFileDialog::getSaveFileName(this,"Select Existing Text File","Text File (*.txt)");
+//     QString filesave= QFileDialog::getSaveFileName(this,"Select Existing Text File","Text File (*.txt)");
+    QString filesave = "list_hasil.txt";
     ui->txtFileSave->setText(filesave);
 
     QFile filestream(filesave);
