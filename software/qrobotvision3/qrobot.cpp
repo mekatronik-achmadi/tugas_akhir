@@ -4,14 +4,14 @@
 int iLowH = 100;
 int iHighH = 130;
 
-int iLowS = 70;
-int iHighS = 180;
+int iLowS = 87;
+int iHighS = 183;
 
-int iLowV = 70;
-int iHighV = 180;
+int iLowV = 80;
+int iHighV = 182;
 
-uint minArea = 300;
-uint maxArea = 35000;
+uint minArea = 31;
+uint maxArea = 22500;
 
 qrobot::qrobot(QWidget *parent) :
     QMainWindow(parent),my_port(0),

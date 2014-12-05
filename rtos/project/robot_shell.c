@@ -1,7 +1,6 @@
 #include "srcconf.h"
  
 uint16_t dir;
-uint16_t delay=250;
 
 Thread *shelltp = NULL;
 
@@ -25,7 +24,7 @@ static void cmd_foward(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=FOWARD;
-  chThdSleepMilliseconds(delay+150);
+  chThdSleepMilliseconds(250);
   dir=STOP;
   return;
 }
@@ -38,7 +37,7 @@ static void cmd_backward(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=BACKWARD;
-  chThdSleepMilliseconds(delay+150);
+  chThdSleepMilliseconds(250);
   dir=STOP;
   return;
 }
@@ -51,7 +50,7 @@ static void cmd_right(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=RIGHT;
-  chThdSleepMilliseconds(delay-150);
+  chThdSleepMilliseconds(50);
   dir=STOP;
   return;
 }
@@ -64,7 +63,7 @@ static void cmd_left(BaseSequentialStream *chp, int argc, char *argv[]) {
     return;
   }
   dir=LEFT;
-  chThdSleepMilliseconds(delay-150);
+  chThdSleepMilliseconds(50);
   dir=STOP;
   return;
 }

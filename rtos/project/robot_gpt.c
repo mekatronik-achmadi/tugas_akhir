@@ -1,7 +1,7 @@
 #include "srcconf.h"
 
 uint16_t loop;
-uint16_t value=25;
+uint16_t value=50;
 extern uint16_t dir;
 
 static void gpt3cb(GPTDriver *gptp) {
