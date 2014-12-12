@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="parts.svg"
+   inkscape:export-filename="/home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/parts.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="408.18896"
+     inkscape:cy="519.33415"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:9.79754448;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4337"
+       width="603.05957"
+       height="877.34528"
+       x="788.47015"
+       y="220.83238" />
+    <rect
+       style="fill:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000"
+       id="rect3358"
+       width="1014.2857"
+       height="877.14288"
+       x="-345.71429"
+       y="220.93361" />
+    <image
+       y="345.21936"
+       x="-311.78571"
+       id="image3079"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/webcam-c170-feature-detail-image.png"
+       height="220"
+       width="475" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-131.42857,65.714286)"><flowRegion
+         id="flowRegion3084"><rect
+           id="rect3086"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara3088">WebCam Logitech C170</flowPara></flowRoot>    <image
+       y="672.64789"
+       x="-72.35714"
+       id="image3235"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/raspi.jpeg"
+       height="273.71426"
+       width="401.85718" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(127.01311,456.88005)"><flowRegion
+         id="flowRegion3084-3"><rect
+           id="rect3086-9"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara3088-3">Raspberry Pi</flowPara></flowRoot>    <image
+       y="329.50504"
+       x="277.14285"
+       id="image3324"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/driver_controller.png"
+       height="248.57143"
+       width="348.57141" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7-8"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(451.65459,56.880053)"><flowRegion
+         id="flowRegion3084-3-8"><rect
+           id="rect3086-9-8"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara3354">Motor Controller</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7-3"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(1.7597217,0,0,1.9229383,333.72273,-717.49655)"><flowRegion
+         id="flowRegion3084-3-9"><rect
+           id="rect3086-9-1"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara3088-3-2">5 volt</flowPara></flowRoot>    <image
+       y="323.79074"
+       x="905.71429"
+       id="image4230"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/driver_fet.png"
+       height="285.71426"
+       width="365.71429" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7-8-7"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(1124.0109,83.614141)"><flowRegion
+         id="flowRegion3084-3-8-2"><rect
+           id="rect3086-9-8-1"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara4260">Motor Driver</flowPara></flowRoot>    <image
+       y="683.57648"
+       x="928.78571"
+       id="image4307"
+       xlink:href="file:///home/development/Projects/tugas_akhir/presentasi/sem_pro/bagian_robot/dc-geared.jpg"
+       height="263.28571"
+       width="319.57144" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7-8-7-1"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(1123.3606,424.28)"><flowRegion
+         id="flowRegion3084-3-8-2-1"><rect
+           id="rect3086-9-8-1-5"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara4260-9">DC Geared Motor</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3082-7-3-0"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="matrix(1.7597217,0,0,1.9229383,1274.451,-710.76249)"><flowRegion
+         id="flowRegion3084-3-9-4"><rect
+           id="rect3086-9-1-8"
+           width="617.14288"
+           height="114.28571"
+           x="-160"
+           y="495.21933" /></flowRegion><flowPara
+         id="flowPara3088-3-2-0">12 volt</flowPara></flowRoot>  </g>
+</svg>
