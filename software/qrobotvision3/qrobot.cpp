@@ -24,7 +24,7 @@ qrobot::qrobot(QWidget *parent) :
     QObject::connect(my_cam_timer,SIGNAL(timeout()),this,SLOT(img_proc()));
     my_cam_timer->start(10);
 
-    cam.open(1);
+    cam.open(0);
 
     if ( !cam.isOpened()){
         std::cout << "Cannot open the web cam" << std::endl;

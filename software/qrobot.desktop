@@ -1,0 +1,6 @@
+[Desktop Entry]
+
+Type = Application
+Name = QRobot
+Exec = sudo /usr/bin/qrobot
+Terminal= True
