@@ -1,0 +1,385 @@
+% \documentclass[12pt,journal,compsoc]{IEEEtran}
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\ifCLASSOPTIONcompsoc
+\else
+\fi
+
+\ifCLASSINFOpdf
+\else
+\fi
+
+\newcommand\MYhyperrefoptions{
+bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},urlcolor={black},
+pdftitle={Rancang Bangun Robot Vision Untuk Object Finding Menggunakan Color Tracking pada perangkat RaspberryPi},
+pdfsubject={Typesetting},
+pdfauthor={Achmadi},
+pdfkeywords={Kata Kunci}
+}
+
+\begin{document}
+
+
+ \title{Rancang Bangun Robot Vision Untuk Object Finding Menggunakan Color Tracking pada perangkat RaspberryPi}
+
+ \author{
+ Achmadi, Apriani Kusuma Wardani\\
+ Teknik Fisika, Fakultas Teknologi Industri, Institut Teknologi Sepuluh Nopember (ITS)\\
+ Jl. Arief Rahman Hakim, Surabaya 60111\\
+ \textit{Email:} mekatronik.achmadi@gmail.com, apriani.tf@gmail.com
+%   Achmadi,241000085
+%  \thanks{Dicetak 10 Desember 2014}
+ }
+ 
+%  \markboth{Handout Progres 1 TA Gasal 2014}{RapberryPi RoboVision}
+ 
+%   \IEEEtitleabstractindextext{
+%   
+%   \begin{abstract}
+%   Ini Abstrak.
+%   \end{abstract}
+%   
+%   \begin{IEEEkeywords}
+%   Ini Kata Kunci
+%   \end{IEEEkeywords}
+%   }
+  
+  \maketitle
+%   \IEEEdisplaynontitleabstractindextext
+%   \IEEEpeerreviewmaketitle
+  
+ 
+ \textbf{
+ Abstrak--
+ Telah dilakukan perancangan, pembangunan, dan pengujian sebuah robot berbasis vision yang mampu menemukan objek. 
+ Robot telah menjadi alat yang populer dalam membantu pekerjaan manusia.
+ Informasi vision merupakan sumber informasi yang memiliki konten informasi tinggi.
+ Rancang bangun robot vision berupa minikomputer RaspberrPi dilengkapi dengan kamera, motor controller, motor driver, dan motor dc.
+ Kemudian disusun perangkat lunak pengolah citra untuk color tracking dengan segmentasi berdasarkan nilai Hue 100-130, Saturation 87-182, dan Value 80-183.
+ Hasilnya adalah robot mampu menemukan objek uji berupa bola biru pada jarak maximal 585 cm dan pencahayaan minimal 5 lumen.
+ }
+ 
+ \textbf{
+ Kata Kunci--
+ Robot Vision,
+ RaspberrPi,
+ HSV,
+ Color Tracking
+ }
+ 
+ \begin{center}
+     I. PENDAHULUAN
+  \end{center}
+  
+  \IEEEPARstart{R}{obot} vision adalah robot yang mampu menggunakan kamera sebagai sumber informasi untuk diolah sesuai kebutuhan. 
+  Tujuan utama setiap perancangan robot tentu adalah untuk membantu atau mengganti pekerjaan manusia. 
+  Kemampuan robot untuk melakukan pekerjaan yang berulang dan berbahaya telah menjadi kebutuhan di setiap lingkungan industri.
+  
+  Untuk memenuhi kebutuhan tersebut telah dikembangkan beragam teknologi sensor dan actuator. 
+  Khusus untuk sensor, telah dikembangkan teknologi yang mirip dengan cara kerja pada indra manusia. 
+  Salah satu yang banyak dipakai adalah penggunaan kamera sebagai pengganti mata untuk robot.
+  Penggunaan kamera sebagai sensor visual telah banyak di terapkan pada bidang robotika.
+  Informasi vision merupakan sumber informasi yang memiliki konten informasi tinggi.
+  
+  RaspberryPi merupakan salah satu jenis SBC (Single Board Computer) dengan spesifikasi yang mencukupi untuk melakukan proses color tracking.
+  Tersedia Operating System yang dapat dijalankan oleh RaspberryPi yaitu Raspbian yang berbasis Linux dan memiliki pustaka pengolahan citra OpenCV di lumbung perangkat lunaknya. 
+  RaspberryPi dan Operating System Raspbian merupakan proyek opensource yang bersifat gratis.
+  
+  Penjejakan warna merupakan salah satu metode penentuan posisi objek yang sederhana. 
+  Prinsip proses penjejakan warna adalah mensegmentasi gambar sesuai warna kemudian membaca perubahan distribusi pixel hasil segmentasi.
+  Mode warna HSV adalah mode warna yang menyatakan warna dalam 3 variabel yaitu Hue, Saturation, dan Value.
+  Segmentasi warna dapat dilakukan dengan metode thresholding sesuai rentang nilai HSV. 
+  Mode warna HSV cocok digunakan untuk mengenali satu warna objek dalam satu waktu.
+  
+  \begin{center}
+     II. TEORI PENUNJANG
+  \end{center}
+  \noindent \textit{A.Color Tracking}
+  
+  Color Tracking adalah proses penentuan suatu koordinat objek dari sekumpulan pixel dengan warna tertentu dalam sebuah citra digital.
+  Untuk matrix biner dimana nilai setiap pixel hanya 0 dan 1 maka penentuan koordinat dapat dilakukan dengan perhitungan pusat massa 2D.
+  
+  \begin{equation}
+  \overline{x}=\frac{x1*m1 + x2*m2 + x3*m3 +...}{m1 + m2 + m3 +...}
+  \end{equation}
+  \begin{equation}
+  \overline{y}=\frac{y1*n1 + y2*n2 + y3*n3 +...}{n1 + n2 + n3 +...}
+  \end{equation}
+  
+  \noindent \textit{B. Mode Warna HSV}
+  
+  Mode warna HSV adalah mode warna yang menyatakan warna dalam 3 variabel yaitu Hue, Saturation, dan Value.
+  Nilai Hue merepresentasikan nilai jenis warna yang merupakan nilai kombinasi RGB dalam besaran sudut. 
+  Pada dasarnya nilai Hue dibagi dalam juring lingkaran sehingga jangkauan nilainya adalah 0-360, namun karena dalam bahasa pemrograman variabel pemrograman hanya 8bit (0-255) maka jangkauan juring di reduksi menjadi setengah lingkaran (0-179).
+  Nilai Saturation merepresentasikan tingkat campuran suatu warna dengan warna putih dengan jangkauan nilai 0-255.
+  Sedangkan nilai Value merepresentasikan tingkat campuran suatu warna dengan warna hitam dengan jangkauan nilai 0-255.
+  
+%   \newpage
+  \begin{center}
+    \includegraphics[width=200pt,height=200pt]{HSV}\\
+    Gambar 2.1 Mode Warna HSV.
+  \end{center}
+  
+  \noindent \textit{C. Segmentasi}
+  
+  Proses segmentasi yang digunakan disini menggunakan Tresholding dimana setiap nilai pixel dibandingkan dengan nilai ambang.
+  Jika masuk diantara ambang atas dan bawah, maka di ambil nilai putih (skala abu-abu), sedangkan jika tidak diambil nilai hitam (skala abu-abu).
+  Secara matematis dinyatakan:
+  \begin{equation}
+    P(i,j) =  
+  \begin{cases}
+      255,& \text{jika } H_{min} \leq H\leq H_{max} \land \\
+      & S_{min} \leq S\leq S_{max} \land \\
+      & V_{min} \leq V\leq V_{max}\\
+      0,              & \text{jika selainnya } \\
+  \end{cases}
+  \end{equation}
+  
+  \begin{center}
+     III. METODE PENELITIAN
+  \end{center}
+  
+  \noindent \textit{A. Alur Penelitian}
+  
+  Pengerjaan tugas akhir ini meliputi studi literatur, perancangan dan pembangunan robot vision, pengujian robot vision, analisa data dan penyusunan laporan. 
+  Tahapan pengerjaan tugas akhir ini dimulai dengan studi literatur. 
+  Studi literatur ini bertujuan untuk mengetahui dasar-dasar perancangan robot yang telah dibuat pengembang lain.
+  Disini desain robot yang dipilih adalah desain robot beroda karena desain terebut adalah desain yang paling mudah dan paling dasar. 
+  Desain tersebut kemudian akan digunakan ketika perancangan. 
+  Setelah desain selesai dibuat, maka robot akan dirakit menjadi 1 unit. 
+  Setelah selesain perakitan, maka dilakukan proses penentuan nilai HSV sehingga robot dapat menemukan robot. 
+  Jika ada kegagalan dalam pencarian objek, maka dilakukan perbaikan. 
+  Kemudian unit tersebut akan di uji untuk mendapatkan spesifikasi dari robot itu sendiri mencakup jarak terjauh, jarak kiri-kanan,kecepatan, dan tingkat pencahayaan. 
+  Setelah didapatkan data tersebut, maka akan dilakukan analisa. 
+  Terakhir dilakukan penulisan laporan.
+  Tahapan tersebut tergambar dalam diagram alir pada gambar 3.1 berikut:
+  \begin{center}
+    \includegraphics[width=250pt,height=350pt]{work}\\
+    Gambar 3.1 Diagram alir kerja.
+  \end{center}
+  
+  \noindent \textit{B. Perancangan dan Pembangunan}
+  
+  Perancangan robot dimulai dari mendesain sistem robot yang terbagi menjadi bagian yaitu:\\
+  - Aktuator\\
+  - Driver motor\\
+  - Controller motor\\
+  - Sistem tenaga\\
+  - Algoritma perangkat lunak\\
+  - Sedangkan untuk perangkat kamera dan RaspberryPi tidak perlu lagi dilakukan perancangan apa pun karena akan digunakan secara tanpa ada modifikasi.
+  
+  Setelah setiap bagian dibuat maka dirakit robot seperti gambar 3.2 berikut:
+  
+  \begin{center}
+    \includegraphics[width=150pt]{apart}\\
+    Gambar 3.2 Bagian robot setelah dirakit
+  \end{center}
+  
+  Secara skematik hubungan antar komponen utama ditunjukkan oleh gambar 3.3 berikut
+  \begin{center}
+    \includegraphics[width=200pt]{desain_jadi}\\
+    Gambar 3.3 Skema Robot.
+  \end{center}
+  
+  Sedangkan gambar 3.4 berikut adalah bagian robot yang dirakit menjadi satu.
+  \begin{center}
+    \includegraphics[width=150pt]{full}\\
+    Gambar 3.4 Bagian robot setelah disatukan dalam satu kotak.
+  \end{center}
+  
+  Untuk rancangan algoritma perangkat lunak ditunjukkan oleh gambar 3.5 berikut.
+  
+  \begin{center}
+    \includegraphics[width=250pt]{process}\\
+    Gambar 3.5 rancangan algoritma perangkat lunak
+  \end{center}
+  
+  Flowchart di atas beserta proses pengolahan citra telah dibentuk menjadi program/software yang dapat dijalankan di CPU.
+  Program ini ditulis dengan C/C++ dan mampu membaca web camera untuk diolah berdasarkan nilai HSV yang telah ditentukan serta mampu memberi perintah ke Motor Controller.
+  Gambar 1.5 berikut adalah tampilan perangkat lunak yang berjalan di RaspberrPi. 
+  Perangkat lunak ini bekerja dengan mengambil dari kamera untuk kemudian diproses dan memutuskan aksi dari robot.
+  
+  \begin{center}
+    \includegraphics[width=250pt]{softpic}\\
+    Gambar 3.6 Perangkat Lunak Robot
+  \end{center}
+  
+  \noindent \textit{C. Range HSV}
+  
+  Untuk nilai range pada matrix Hue, telah ditetapkan nilainya oleh pustaka OpenCV.
+  Untuk warna biru adalah antara 100-130.
+  Sedangkan untuk nilai S dan V didapatkan dengan mengolah gambar mulai dari 0cm hingga 645 cm dengan kenaikan setiap 15cm diambil 10 gambar maka didapat 440 gambar.
+  Setiap gambar diolah agar objek memiliki:\\
+  - Jumlah pixel hasil threshold sebanyak mungkin\\
+  - Posisi centroid yang masih di radius pusat gambar\\
+ Pengolahan tersebut untuk mendapatkan jangkauan HSV sesuai kriteria di atas.
+ 
+  Dengan mengambil rata-rata didapat bahwa nilai Smin adalah 87, Smax adalah 183, Vmin adalah 80, dan Vmax adalah 182.
+  Nilai S dan V diatas kemudian digunakan dalam proses threshold.
+  Apabila menggunakan nilai S dan V diatas, objek pada jarak lebih 585 cm sudah tidak lagi dapat dapat dibedakan antara pixel objek maupun pixel noise karena ukuran pixel objek relatif kecil.
+  Kemudian nilai batas bawah dan atas jumlah pixel yang diambil adalah 31 dan 22500.
+  
+  \begin{center}
+     IV. HASIL dan PEMBAHASAN
+  \end{center}
+  
+  \noindent \textit{A. Jarak terjauh}
+  
+  Pengujian ini adalah bertujuan untuk mengetahui jarak terjauh yang dapat dibaca oleh robot sehingga robot dapat menemukannya.
+  Dalam pengujian dilakukan 10 kali run-test dan hasilnya robot mampu menemukan bola.
+  
+  \noindent \textit{B. Field Of View (FOV)}
+  
+  Field Of View adalah batas jangkauan kiri dan kanan dari kamera yang dapat ditangkap gambarnya.
+  Dalam lembar data dari web camera tertera bahwa FOV yang dimiliki adalah 58 derajat.
+  Gambar 4.1 berikut menunjukkan skema posisi bola yang tertangkap kamera untuk menunjukkan nilai sudut FOV.
+  \begin{center}
+    \includegraphics[width=200pt]{fov}\\
+    Gambar 4.1 Skema FOV
+  \end{center}
+  Sedangkan gambar 4.2 berikut posisi bola yang tertangkap kamera
+  \begin{center}
+    \includegraphics[width=200pt]{data_fov}\\
+    Gambar 4.2 FOV
+  \end{center}
+  
+  \noindent \textit{C. Kecepatan}
+  
+  Pengujian kecepatan dilakukan untuk mendapatkan rentang kecepatan yang dapat diatur pada robot. 
+  Motor robot secara default akan berputar dengan torsi 510 rpm dan torsi 15 kg.cm pada daya 12volt 1A. 
+  Memberi daya kepada motor dalam pulsa dengan duty-cycle tertentu dapat mereduksi kecepatan motor agar sesuai dengan kebutuhan. 
+  Tabel 4.1 adalah tabel hasil pengukuran rpm motor secara aktual dengan stroboscope pada setiap pengaturan duty-cycle.
+  
+  \begin{center}
+   \begin{tabular}{ |l|l| }
+    \hline
+    Duty-Cycle & RPM\\
+   \hline
+    10 & 60\\
+    20 & 126\\
+    30 & 147\\
+    40 & 200\\
+    50 & 341\\
+    60 & 398\\
+    70 & 398\\
+    80 & 397\\
+    90 & 445\\
+    100 & 510\\
+    \hline
+   \end{tabular}
+   
+  Tabel 4.1 Hasil pengujian duty-cycle
+  \end{center}
+  
+  Selain mengalami reduksi rpm, motor dc juga mengalami reduksi torsi. 
+  Berdasarkan pengujian dinamis diketahui bahwa pada duty-cycle 100\% robot gagal menemukan objek akibat gerakan yang terlalu cepat.
+  Sedangkan pada 10\% robot tidak lagi bergerak
+  Maka duty-cycle yang dapat digunakan adalah 20\% hingga 90\%.
+  
+  \noindent \textit{D. Pencahayaan}
+  
+  Pengujian ini ditujukan untuk menguji spesifikasi robot untuk melihat pengaruh tingkat pencahayaan pada pembacaan bola.
+  Tingkat pencahayaan yang di ukur pada lumen 198, 74, 32, 17, 05 dan 0 (Gelap). 
+  Setiap tingkat cahaya di ambil 10 foto sehingga total didapat 60 foto.
+  Tabel 4.2 berikut menyajikan data rata-rata area pixel hasil threshold untuk setiap lumen.
+  
+    \begin{center}
+   \begin{tabular}{ |l|l|l| }
+    \hline
+    Lumen & Pixel & Fail\\
+   \hline
+    198 & 1900 & No\\ 
+    74 & 14876 & No\\
+    32 & 15307 & No\\
+    17 & 15460 & No\\
+    5 & 9361 & No\\
+    0 & 0 & Yes\\
+    \hline
+   \end{tabular}
+  
+  Tabel 4.2 Rata-rata jumlah pixel hasil threshold untuk setiap tingkat lumen.
+ 
+  \end{center}
+  
+    Kemudian dengan bantuan perangkat lunak, setiap gambar diuji untuk melihat nilai HSV yang dimiliki pixel yang sama pada lumen yang berbeda
+  Tabel 4.3 berikut menyajikan data HSV pada pixel yang sama namun pada lumen yang berbeda
+  
+   \begin{center}
+   \begin{tabular}{ |l|l|l|l| }
+    \hline
+    Lumen & H & S & V\\
+   \hline
+    198 & 112  & 156  & 88 \\
+    74  & 112  & 139  & 79 \\
+    32  & 112  & 161  & 90 \\
+    17  & 112  & 157  & 94 \\
+    05  & 112  & 115  & 73 \\
+    0   & 112  & 0    & 30 \\
+    \hline
+   \end{tabular}
+   \end{center}
+   
+   Berdasarkan data di atas diketahui bahwa nilai Hue cenderung tetap yaitu pada nilai 112 kecuali pada lumen 0.
+   Sedangkan yang mengalami perubahan adalah nilai saturasi dan value. 
+   Seperti diketahui bahwa saturasi adalah tingkat suatu warna terhadap warna putih sehingga semakin gelapnya warna akan menurunkan tingkat saturasi, sedangkan value tingkat suatu warna terhadap warna hitam sehingga semakin cerahpnya warna akan menurunkan tingkat value\\
+
+  \noindent \textit{E. Pemilihan Warna}
+  
+  Pengujian ini ditujukan untuk menguji spesifikasi robot dalam memilih warna. 
+  Dalam pengujian ini, bola biru yang telah digunakan dalam pengujian-pengujian sebelumnya diletakkan berdekatan dengan tambahan 3 bola lain dengan warna merah, kuning dan hijau. 
+  Gambar 4.3 berikut adalah gambar semua bola tersebut. 
+  Untuk menguji robot dalam memilih warna biru, ke-empat bola tersebut diletakkan dalam 10 variasi posisi. 
+  Gambar 4.4 menunjukkan 10 variasi tersebut. Robot tidak mengalami kegagalan dalam menemukan bola biru di setiap variasi posisi bola.
+
+  \begin{center}
+    \includegraphics[width=200pt]{ball_all}\\
+    Gambar 4.3 FOV
+  \end{center}
+  
+  \begin{center}
+    \includegraphics[width=200pt]{ball_pos}\\
+    Gambar 4.4 Posisi bola
+  \end{center}
+  
+  Kemudian dengan bantuan perangkat lunak dapat dilihat nilai HSV untuk setiap warna.
+  Gambar 4.5 adalah perangkat lunak yang digunakan untuk melihat nilai HSV pada setiap bola
+  Keempat bola memiliki rentang S dan V yang sama namun memiliki rentang H yang berbeda.
+  Berdasarkan analisa di atas diketahui rentang Hue setiap bola adalah sebagai berikut:\\
+  - Biru pada 100-130 \\
+  - Hijau pada 60-90 \\
+  - Kuning pada 15-35 \\
+  - Merah pada 0-10 \\
+
+  \begin{center}
+    \includegraphics[width=200pt]{ball_color}\\
+    Gambar 3.5 Mendapatkan nilai Hue
+  \end{center}
+  
+  \begin{center}
+     IV. PENUTUP
+  \end{center}
+  
+  Dalam tugas akhir ini telah dirancang dan dibangun sebuah robot berbasis vision yang mampu menemukan objek. 
+  Diharapkan pengembangan robot berbasis vision dalam tingkat aplikasi menjadi lebih mutakhir.
+  
+  \begin{center}
+     V. DAFTAR PUSTAKA
+  \end{center}
+  
+  \noindent - Aleš Ude.2010. " \textit{Robot Vision} ".In-Tech:Croatia\\
+  - Andor Team.2012." \textit{Digital Camera Fundamentals} ".Andor Publisher: USA \\
+  - Browning, Brett.2013. " \textit{Real-Time, Adaptive Color-based Robot Vision} ".Carnigie Mellon University:USA \\
+  - Chao, Fei.2014. " \textit{A developmental approach to robotic pointing via human–robot interaction} ".Xiamen University:China \\
+  - Honda Team.2007. " \textit{Asimo Technical Information} " Honda Press:Japan\\
+  - Aldebaran Robotics.2012 " \textit{Nao Technical Datasheet} " Aldebaran Press:France\\
+  - Robotis.2012 " \textit{Darwin-Op Technical Manual} " Robotis Inc:Korea\\
+  - Upton, Eben.2012 " \textit{RaspberryPi User Guide} ".RaspberrPi.org:UK\\
+  - OpenCV Team.2014" \textit{The OpenCV Reference Manual} " OpenCV.org:USA\\
+  - Phillips, Dwyne.2000 " \textit{Image Processing in C} " \\
+  - Zhou, Huiyu.2010 " \textit{Digital Image Processing Part I} " \\
+
+\end{document}

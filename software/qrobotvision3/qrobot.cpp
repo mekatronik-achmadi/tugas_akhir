@@ -30,15 +30,15 @@ qrobot::qrobot(QWidget *parent) :
         std::cout << "Cannot open the web cam" << std::endl;
     }
 
-    cv::namedWindow("Control", CV_WINDOW_AUTOSIZE); //create a window called "Control"
+    cv::namedWindow("Control", CV_WINDOW_AUTOSIZE); 
 
-    cv::createTrackbar("LowH", "Control", &iLowH, 179); //Hue (0 - 179)
+    cv::createTrackbar("LowH", "Control", &iLowH, 179); 
     cv::createTrackbar("HighH", "Control", &iHighH, 179);
 
-    cv::createTrackbar("LowS", "Control", &iLowS, 255); //Saturation (0 - 255)
+    cv::createTrackbar("LowS", "Control", &iLowS, 255); 
     cv::createTrackbar("HighS", "Control", &iHighS, 255);
 
-    cv::createTrackbar("LowV", "Control", &iLowV, 255); //Value (0 - 255)
+    cv::createTrackbar("LowV", "Control", &iLowV, 255); 
     cv::createTrackbar("HighV", "Control", &iHighV, 255);
 
     cam.set(CV_CAP_PROP_FRAME_WIDTH, 320);
