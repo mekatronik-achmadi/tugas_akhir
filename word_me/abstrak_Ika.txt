@@ -1,0 +1,7 @@
+Robot vision adalah robot yang mampu menggunakan kamera sebagai sumber informasi untuk diolah sesuai kebutuhan informasi yang ditangkap oleh sensor tersebut akan diolah oleh sebuah komponen pengolah informasi tersebut.
+Salah satu komponen pengolah informasi tersebut adalah RaspberryPi.
+Tujuan dari perancangan robot vision ini adalah untuk menjejak sebuah objek berdasarkan warnanya. 
+Rancang bangun robot vision berupa komputer mini RasberryPi dilengkapi dengan kamera, motor controller, motor driver, motor dc.
+Kemudian dibangun perangkat lunak pengolah citra untuk menjejak warna dengan segmentasi berdasarkan nilai Hue 100-130, Saturation 87-182, dan Value 80-183. 
+Berdasarkan eksperimen yang dilakukan, robot dapat menemukan objek uji berupa bola berwarna biru pada jarak maksimal 585 cm dan pencahayaan minimal 5 lumen.
+Dari hasil tersebut rancang bangun robot vision telah berhasil dilakukan.
