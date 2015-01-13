@@ -290,10 +290,10 @@ void qrobot::img_proc()
     ui->sldX->setMaximum(imgCols);
     ui->sldY->setMaximum(imgRows);
 
-    cv::split(imgOriginal,imgchan);
+    cv::split(imgHSV,imgchan);
 
     imgCirc= cv::Mat::zeros(imgOriginal.size(),CV_8UC3);
-    cv::circle(imgCirc,cv::Point(ui->sldX->value(),ui->sldY->value()),5,cv::Scalar(0,255,0),2);
+    cv::circle(imgCirc,cv::Point(ui->sldX->value(),ui->sldY->value()),1,cv::Scalar(0,255,0),2);
 
     vHue = imgchan[0].at<uchar>(ui->sldY->value(),ui->sldX->value());
     vSat = imgchan[1].at<uchar>(ui->sldY->value(),ui->sldX->value());
