@@ -71,7 +71,7 @@ qrobot::qrobot(QWidget *parent) :
     QObject::connect(my_move,SIGNAL(timeout()),this,SLOT(move_proc()));
     my_move->start(500);
 
-    QObject::connect(my_port,SIGNAL(readyRead()),this,SLOT(next_move()));
+//    QObject::connect(my_port,SIGNAL(readyRead()),this,SLOT(next_move()));
 }
 
 qrobot::~qrobot()
